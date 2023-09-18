@@ -2,61 +2,68 @@
 <html>
 
 <head>
-    <title>Blank</title>
+    <title>Renders</title>
     <html lang="en">
     <meta charset="UTF-8">
-    <meta name="description" content="Template">
+    <meta name="description" content="Blender renders">
     <meta name="author" content="Callan Sheldon">
     <link rel="stylesheet" href="style.css">
     <style>
-      
-      .container{
-        margin: 0 auto;
-        width: 100%;
-      }
-
-      
-      .gallery-wrap {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        height: 70vh;
-      }
-      
-      .item {
-        flex: 1;
-        background-position: center;
-        background-size: cover;
-        background-repeat: none;
-        transition: flex 0.8s ease;
-        
-        &:hover{
-          flex: 7;
-        }
-      }
-      
-      .item-1 { 
-        background-image: url('/imgs/blender/subdiviedNextrude.png');
-      }
-      
-      .item-2 { 
-        background-image: url('/imgs/blender/A2_AlienPFP\ smaller.png');
-      }
-      
-      .item-3 { 
-        background-image: url('/imgs/blender/Thruster2.png');
-      }
-      
-      .item-4 { 
-        background-image: url('/imgs/blender/clicccccc.png');
-      }
-      
-      .item-5 { 
-        background-image: url('/imgs/blender/coollines.png');
-      }
-      .item-6 {
-        background-image: url('/imgs/blender/fractaldifferent\ angle1.png')
-      };
+        .container{
+            margin: 0 auto;
+            width: 100%;
+          }
+    
+          
+          .gallery-wrap {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 70vh;
+          }
+          
+          .item {
+            flex: 1;
+            background-position: center;
+            background-size: cover;
+            background-repeat: none;
+            transition: flex 0.8s ease;
+            
+            &:hover{
+              flex: 7;
+            }
+          }
+          
+          .item-1 { 
+            background-image: url('/imgs/blender/subdiviedNextrude.png');
+          }
+          
+          .item-2 { 
+            background-image: url('/imgs/blender/A2_AlienPFP\ smaller.png');
+          }
+          
+          .item-3 { 
+            background-image: url('/imgs/blender/Thruster2.png');
+          }
+          
+          .item-4 { 
+            background-image: url('/imgs/blender/clicccccc.png');
+          }
+          
+          .item-5 { 
+            background-image: url('/imgs/blender/coollines.png');
+          }
+          .item-6 {
+            background-image: url('/imgs/blender/fractaldifferent\ angle1.png')
+          };
+          #hoverVideo {
+      display: none;
+      border: 1px solid green;
+    }
+    
+    #hoverVideo:hover {
+      display: block;
+    }
     </style>
     <script src="https://www.youtube.com/player_api"></script>
 </head>
@@ -73,41 +80,82 @@
                 </a>
             </div>
             <div class="nav">
-                <a href="index.htm">Index</a>
-                <br>
-                <a href="about.htm">About</a>
-                <br>
-                <a href="now.htm">Now</a>
-                <br>
-                <a href="contact.htm">Contact</a>
-            </div>
+              <a href="index.htm">Index</a>
+              <br>
+              <a href="now.htm">Now</a>
+              <br>
+              <a href="about.htm">About</a>
+              <br>
+              <a href="contact.htm">Contact</a>
+          </div>
         </div>
         <div class="right-side">
             <div id="Content">
                 <h1>My Blender renders</h1>
                 <p style="text-align: center;">Just random things I thought might look cool</p>
                 <div class="container">
-                  
+
                     <div class="gallery-wrap">
-                      <div class="item item-1"></div>
-                      <div class="item item-2"></div>
-                      <div class="item item-3"></div>
-                      <div class="item item-4"></div>
-                      <div class="item item-5"></div>
-                      <div class="item item-6"></div>
+                        <div class="item item-1"></div>
+                        <div class="item item-2"></div>
+                        <div class="item item-3"></div>
+                        <div class="item item-4"></div>
+                        <div class="item item-5"></div>
+                        <div class="item item-6"></div>
                     </div>
-                   </div>
-                <p>gsfbfsb</p>
-                <div id="youtube-player1" style="height: 30vh;"></div>
-                <script>
-                    // This function creates a YouTube player inside the specified <div> with the given video ID.
-                    function onYouTubePlayerAPIReady() {
-                      new YT.Player('youtube-player1', {
-                        videoId: 'O9AkyI6ju24',
-                      });
-                    }
-                  </script>
-                  
+                </div>
+                <div class="video-container" style="display: flex;">
+                  <video id="videoPlayer1" onmouseover="playVideo(1);" onmouseout="pauseVideo(1);" style="flex: 1; width: 45%; margin-right: 5px;">
+                      <source src="vids/Geometric_snowflake_portal.mp4" type="video/mp4">
+                  </video>
+              
+                  <video id="videoPlayer2" onmouseover="playVideo(2);" onmouseout="pauseVideo(2);" style="flex: 1; width: 45%;">
+                      <source src="vids/spinny_stars.mp4" type="video/mp4">
+                  </video>
+              </div>
+              <div class="video-container" style="display: flex;">
+                <video id="videoPlayer3" onmouseover="playVideo(3);" onmouseout="pauseVideo(3);" style="flex: 1; width: 45%; margin-right: 5px;">
+                    <source src="vids/ea2movinggeo.mp4" type="video/mp4">
+                </video>
+            
+                <video id="videoPlayer4" onmouseover="playVideo(4);" onmouseout="pauseVideo(4);" style="flex: 1; width: 45%;">
+                    <source src="vids/Thruster1.mp4" type="video/mp4">
+                </video>
+            </div>
+              
+              <script>
+                  const videoPlayers = [
+                      { id: 'videoPlayer1', isPlaying: false, currentTime: 0 },
+                      { id: 'videoPlayer2', isPlaying: false, currentTime: 0 },
+                      { id: 'videoPlayer3', isPlaying: false, currentTime: 0 },
+                      { id: 'videoPlayer4', isPlaying: false, currentTime: 0 },
+
+                  ];
+              
+                  function playVideo(playerIndex) {
+                      const player = videoPlayers[playerIndex - 1];
+                      const videoPlayer = document.getElementById(player.id);
+              
+                      if (!player.isPlaying) {
+                          videoPlayer.currentTime = player.currentTime;
+                          videoPlayer.play();
+                          player.isPlaying = true;
+                      }
+                  }
+              
+                  function pauseVideo(playerIndex) {
+                      const player = videoPlayers[playerIndex - 1];
+                      const videoPlayer = document.getElementById(player.id);
+              
+                      if (player.isPlaying) {
+                          player.currentTime = videoPlayer.currentTime;
+                          videoPlayer.pause();
+                          player.isPlaying = false;
+                      }
+                  }
+              </script>
+              
+
             </div>
         </div>
     </div>
