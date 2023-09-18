@@ -38,10 +38,6 @@ a {
 a:hover {
     color: rgb(172, 172, 255);
 }
-table {
-    margin-top: 5vh;
-    padding-left: 1%;
-}
 body {
     font-family: "RobotoMono";
     background-color: #040407;
