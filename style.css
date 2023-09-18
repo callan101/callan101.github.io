@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "RobotoMono";
+    src: url("Fonts/RobotoMono-VariableFont_wght.ttf");
+}
+.container {
+    display: flex;
+}
+.left-side {
+    position: relative;
+    min-width: 170px;
+    flex: 2;
+    border-right:1px solid rgb(68, 68, 68);
+    text-align: right;
+    min-height: 100vh;
+}
+.right-side {
+    flex: 8;
+}
+.author {
+    text-align: left;
+    position: fixed;
+    bottom: 1vh;
+    left: 1vw;
+}
+.nav {
+    text-align: right;
+    width: 19%;
+    min-width: 165px;
+    position: fixed;
+    line-height: 3vh;
+    padding-right: 1vw;
+    padding-top: 2vh;
+}
+a {
+    color: #f5f2ff;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(172, 172, 255);
+}
+table {
+    margin-top: 5vh;
+    padding-left: 1%;
+}
+body {
+    font-family: "RobotoMono";
+    background-color: #040407;
+    color: #f5f2ff;
+    white-space:nowrap;
+    font-size: small;
+    margin: 0;
+    padding: 0;
+    
+}
+em{
+    float: right;
+    padding-left: 1vw;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+#OuterContent{
+    padding: 1%;
+}
+#InnerContent{
+    width: fit-content;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+#Content{
+    text-align: left;
+    white-space: pre-line;
+    padding: 5%;
+    align-items: center;
+}
