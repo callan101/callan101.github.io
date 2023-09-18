@@ -52,18 +52,10 @@ em{
     float: right;
     padding-left: 1vw;
 }
-h1{
+h1, h2, h3, h4 {
     text-align: center;
 }
-h2{
-    text-align: center;
-}
-h3{
-    text-align: center;
-}
-h4{
-    text-align: center;
-}
+
 #OuterContent{
     padding: 1%;
 }
@@ -77,5 +69,6 @@ h4{
     text-align: left;
     white-space: pre-line;
     padding: 5%;
+    padding-top: 0%a;
     align-items: center;
 }
