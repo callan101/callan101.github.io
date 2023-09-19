@@ -12,15 +12,26 @@
 
 <body>
     <div class="container">
-        <div class="left-side">
+        <div class="left-sidemobile">
             <div class="author">
                 <a href="index.htm">
-                    <div id="unix-time"></div>
-                    <div id="clock"></div>
-                    <div id="formatted-date"></div>
-                    <strong>Callan (101) Sheldon</strong>
+                    <div class="times">
+                        <div class="unix-time"></div>
+                        <div class="clock"></div>
+                    </div>
+                    <div class="dateNAuthor">
+                        <div class="formatted-date"></div>
+                        <strong>Callan (101) Sheldon</strong>
+                    </div>
                 </a>
+                <div class="nav">
+                    <div class="navwrap">
+                        <a href="index.htm">Index</a> <a href="now.htm">Now</a> <a href="about.htm">About</a> <a href="contact.htm">Contact</a>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="left-sidedesktop">
             <div class="nav">
                 <a href="index.htm">Index</a>
                 <br>
@@ -30,12 +41,20 @@
                 <br>
                 <a href="contact.htm">Contact</a>
             </div>
+            <div class="author">
+                <a href="index.htm">
+                    <div class="unix-time"></div>
+                    <div class="clock"></div>
+                    <div class="formatted-date"></div>
+                    <strong>Callan (101) Sheldon</strong>
+                </a>
+            </div>
         </div>
         <div class="right-side">
             <div id="Content" style="text-align: center;">
                 <h1>Contact me</h1>
                 <div style="display: inline-block;">
-                    <table style="table-layout: fixed;padding: 5vw; margin: -10vh;">
+                    <table style="table-layout: fixed; line-height: 5vh;">
                         <tr>
                             <td style="vertical-align: middle;">
                                 <a href="mailto:me@callan101.com">

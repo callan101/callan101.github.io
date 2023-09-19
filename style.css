@@ -1,78 +1,143 @@
+
 @font-face {
     font-family: "RobotoMono";
     src: url("Fonts/RobotoMono-VariableFont_wght.ttf");
 }
-.container {
-    display: flex;
-}
-.left-side {
-    position: relative;
-    min-width: 170px;
-    flex: 2;
-    border-right:1px solid rgb(68, 68, 68);
-    text-align: right;
-    min-height: 100vh;
-}
-.right-side {
-    flex: 8;
-}
-.author {
-    text-align: left;
-    position: fixed;
-    bottom: 1vh;
-    left: 1vw;
-}
-.nav {
-    text-align: right;
-    width: 19%;
-    min-width: 165px;
-    position: fixed;
-    line-height: 3vh;
-    padding-right: 1vw;
-    padding-top: 2vh;
-}
-a {
-    color: #f5f2ff;
-    text-decoration: none;
-}
-a:hover {
-    color: rgb(172, 172, 255);
-}
+
+/* Common styles for both layouts */
 body {
     font-family: "RobotoMono";
     background-color: #040407;
     color: #f5f2ff;
-    white-space:nowrap;
+    white-space: nowrap;
     font-size: small;
     margin: 0;
     padding: 0;
-    
 }
-em{
-    float: right;
-    padding-left: 1vw;
+
+a {
+    color: #f5f2ff;
+    text-decoration: none;
 }
+
+a:hover {
+    color: rgb(172, 172, 255);
+}
+
 h1, h2, h3, h4 {
     text-align: center;
+    margin: 0;
+    padding: 0;
+}
+#Content {
+    margin: 5%;
+    white-space:normal;
 }
 
-#OuterContent{
-    padding: 1%;
-}
-#InnerContent{
-    width: fit-content;
-    margin: 0 auto;
-    padding: 20px;
+/* Desktop Styles */
+@media (min-aspect-ratio: 1/1) {
+    .container {
+        display: flex;
+    }
 
+    .left-sidemobile {
+        display: none;
+    }
+
+    .left-sidedesktop {
+        position: relative;
+        min-width: 170px;
+        flex: 2;
+        border-right: 1px solid rgb(68, 68, 68);
+        text-align: right;
+        min-height: 100vh;
+        order: 1;
+    }
+
+    .right-side {
+        flex: 8;
+        order: 2;
+        overflow-y: auto;
+    }
+
+    .author {
+        text-align: left;
+        position: fixed;
+        bottom: 1vh;
+        left: 1vw;
+    }
+    .nav {
+        text-align: right;
+        width: 19%;
+        min-width: 165px;
+        position: fixed;
+        padding-right: 1vw;
+        padding-top: 2vh;
+        line-height: 30px;
+    }
+    em {
+        float: right;
+        padding-left: 1vw;
+    }
+
+    table {
+        margin-top: 5vh;
+        padding-left: 1%;
+    }
+
+    .times {
+        margin: 0;
+        padding: 0;
+    }
 }
-#Content{
-    text-align: left;
-    white-space: pre-line;
-    padding: 5%;
-    padding-top: 0%a;
-    align-items: center;
-    line-height: 1vh;
-}
-p {
-    line-height: normal;
+
+/* Mobile Styles */
+@media (max-aspect-ratio: 1/1) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .left-sidedesktop {
+        display: none;
+    }
+
+    .left-sidemobile {
+        order: 1;
+        flex: 1;
+    }
+
+    .right-side {
+        order: 2;
+        flex: 1;
+        margin-top: 70px;
+    }
+
+    .author {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        border-bottom: 1px solid rgb(68, 68, 68);
+        background-color: #040407;
+    }
+    
+    .dateNAuthor {
+        width: 25%;
+        line-height: 25px;
+        padding-left: 2vw;
+    }
+    .times {
+        float: right;
+        line-height: 25px;
+        padding-right: 2vw;
+    }
+    .nav {
+        text-align: center;
+        width: 100%;
+        font-size: medium;
+   }
+   .navwrap {
+    white-space: normal;
+   }
 }

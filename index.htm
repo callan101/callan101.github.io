@@ -12,15 +12,26 @@
 
 <body>
     <div class="container">
-        <div class="left-side">
+        <div class="left-sidemobile">
             <div class="author">
                 <a href="index.htm">
-                    <div id="unix-time"></div>
-                    <div id="clock"></div>
-                    <div id="formatted-date"></div>
-                    <strong>Callan (101) Sheldon</strong>
+                    <div class="times">
+                        <div class="unix-time"></div>
+                        <div class="clock"></div>
+                    </div>
+                    <div class="dateNAuthor">
+                        <div class="formatted-date"></div>
+                        <strong>Callan (101) Sheldon</strong>
+                    </div>
                 </a>
+                <div class="nav">
+                    <div class="navwrap">
+                        <a href="index.htm">Index</a> <a href="now.htm">Now</a> <a href="about.htm">About</a> <a href="contact.htm">Contact</a>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="left-sidedesktop">
             <div class="nav">
                 <a href="index.htm">Index</a>
                 <br>
@@ -30,10 +41,19 @@
                 <br>
                 <a href="contact.htm">Contact</a>
             </div>
+            <div class="author">
+                <a href="index.htm">
+                    <div class="unix-time"></div>
+                    <div class="clock"></div>
+                    <div class="formatted-date"></div>
+                    <strong>Callan (101) Sheldon</strong>
+                </a>
+            </div>
         </div>
         <div class="right-side">
             <h1 style="white-space: break-spaces;border: 8px solid yellow;">This website is in development, if you find bugs(on desktop) dm callan101 on discord<br>v0.2</h1>
-            <table style="margin-top: 5vh; padding-left: 1%;">
+        <div class="content">
+            <table>
                 <tbody>
                     <tr>
                         <td>
@@ -49,7 +69,7 @@
                     </tr>
                     <tr>
                         <td>
-                            <a href="Echo Pasta.htm">Echo Pastas</a>
+                            <a href="EchoPasta.htm">Echo Pastas</a>
                             <em>2023.09.16</em>
                         </td>
                     </tr>
@@ -68,8 +88,10 @@
                 </tbody>
             </table>
         </div>
+        </div>
     </div>
     <script src="main.js"></script>
 </body>
+
 
 </html>
