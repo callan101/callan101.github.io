@@ -140,7 +140,11 @@ h1, h2, h3, h4 {
    .navwrap {
     white-space: normal;
    }
+   em {
+    float: right;
+    padding-left: 1vw;
+   }
    body {
-    font-size: larger;
+    font-size: 25px;
    }
 }
