@@ -107,34 +107,18 @@ h1, h2, h3, h4 {
         order: 1;
         flex: 1;
     }
-
     .right-side {
         order: 2;
         flex: 1;
-        margin-top: 70px;
     }
-
     .author {
         width: 100%;
-        position: fixed;
         top: 0;
         border-bottom: 1px solid rgb(68, 68, 68);
-        background-color: #040407;
-    }
-    
-    .dateNAuthor {
-        width: 25%;
-        line-height: 25px;
-        padding-left: 2vw;
-    }
-    .times {
-        float: right;
-        line-height: 25px;
-        padding-right: 2vw;
+        padding: 10%;
     }
     .nav {
-        text-align: center;
-        width: 100%;
+        width: 90%;
         font-size: medium;
    }
    .navwrap {
@@ -144,7 +128,5 @@ h1, h2, h3, h4 {
     float: right;
     padding-left: 1vw;
    }
-   body {
-    font-size: 25px;
-   }
+
 }
