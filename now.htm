@@ -1,40 +1,17 @@
 <!DOCTYPE html>
-<html>
 
 <head>
     <title>Now</title>
-    <html lang="en">
     <meta charset="UTF-8">
-    <meta name="description" content="Now">
+    <meta name="description" content="My present">
     <meta name="author" content="Callan Sheldon">
     <link rel="stylesheet" href="style.css">
-    <style>
-        @media (min-width: 769px) {
-        body{
-            overflow: hidden;
-        }
-        ul {
-            border-left: 1px solid grey;
-            padding-left: 1.5vw;
-        }
-    }
-    </style>
 </head>
 
 <body>
     <div class="container">
         <div class="left-sidemobile">
             <div class="author">
-                <a href="index.htm">
-                    <div class="times">
-                        <div class="unix-time"></div>
-                        <div class="clock"></div>
-                    </div>
-                    <div class="dateNAuthor">
-                        <div class="formatted-date"></div>
-                        <strong>Callan (101) Sheldon</strong>
-                    </div>
-                </a>
                 <div class="nav">
                     <div class="navwrap">
                         <a href="index.htm">Index</a> <a href="now.htm">Now</a> <a href="about.htm">About</a> <a href="contact.htm">Contact</a>
@@ -62,71 +39,128 @@
             </div>
         </div>
         <div class="right-side">
-            <div class="container" style="height: 110vh;">
-                <div id="Recent" style="text-align: left; width: 25%; float: left; height: 90%; white-space: normal;padding: 2vw;">
-                    <h1>Recent</h1>
-                    <ul>
-                        <li>Website
-                            <ul>
-                                <li>
-                                    Index
-                                </li>
-                                <li>Now</li>
-                                <li>Contact</li>
-                                <li>Blender</li>
-                                <li>Now</li>
-                            </ul>
-                        </li>
-                        <br>
-                        <li>
-                            Blender v1 of Thrusters
-                        </li>
-                    </ul>
+            <div class="contentmobile">
+                <div class="container">
+                    <div id="Now" style="font-size: 1.2em;">
+                        <h1>Now</h1>
+                        <ul>
+                            <li>Website
+                                <ul>
+                                    <li>User content?</li>
+                                    <li>Music page</li>
+                                    <li>Thoughtful YouTube channels</li>
+                                    <li>About me</li>
+                                    <li>RSS feed for ql</li>
+                                    <li>Socials</li>
+                                    <li>Unix timestamp page</li>
+                                    <li>Mobile optimization</li>
+                                    <li>Drone</li>
+                                    <li>Photos</li>
+                                    <li>Galaga</li>
+                                    <li>Image & video optimization</li>
+                                </ul>
+                            </li>
+                            <li>Blender projects
+                                <ul>
+                                    <li><a href="https://www.youtube.com/watch?v=dxO-DeAEZDM">Cool photo remake</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="Recent">
+                        <h1>Recent</h1>
+                        <ul>
+                            <li>Website
+                                <ul>
+                                    <li>Index</li>
+                                    <li>Contact</li>
+                                    <li>Blender</li>
+                                </ul>
+                            </li>
+                            <li>Blender v1 of Thrusters</li>
+                        </ul>
+                    </div>
+                    <div id="Soon">
+                        <h1>Soon</h1>
+                        <ul>
+                            <li>NAS solution</li>
+                            <li>Repurpose Echo computer</li>
+                            <li>More blender projects</li>
+                            <li>Create a GTag movement game</li>
+                            <li>Light up Echo disc in real life</li>
+                        </ul>
+                    </div>
                 </div>
-                <div id="Now" style="text-align: left; width: 40%; float: left; height: 90%; white-space: normal;padding: 2vw; font-size: medium;">
-                    <h1>Now</h1>
-                    <ul>
-                        <li>Website
-                            <ul>
-                                <li>User content?</li>
-                                <li>Music page</li>
-                                <li>Youtube channels that inspire thought?</li>
-                                <li>Fill in about me</li>
-                                <li>RSS feed for ql</li>
-                                <li>Socials.htm</li>
-                                <li>unix timestamp page with syntax for discord and a link to a good website for the unix</li>
-                                <li>Mobileify this website, look up ways to tell what device the user is on</li>
-                                <li>Drone.htm</li>
-                                <li>photos.htm</li>
-                                <li>Galaga</li>
-                            </ul>
-                        </li>
-                        <br>
-                        <li>
-                            Blender projects
-                            <ul>
-                                <li><a href="https://www.youtube.com/watch?v=dxO-DeAEZDM">This photo is would be cool to remake</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div id="Soon" style="text-align: left; width: 25%; float: left; height: 90%; white-space: normal;padding: 2vw;">
-                    <h1>Soon</h1>
-                    <ul>
-                        <li>Some form of NAS, store bought or home built.
-                        </li>
-                        <li>Repurpose Echo computer
-                        </li>
-                        <li>More blender projects
-                        </li>
-                        <li>Make a GTag movement single player game</li>
-                        <li>Light up echo disc irl</li>
-                    </ul>
+                
+            </div>
+            <div class="contentdesktop" style="white-space: normal;">
+                <div class="container">
+                    <div id="Recent" style="text-align: left; width: 25%; float: left; height: 90%; white-space: normal;padding: 2vw;">
+                        <h1>Recent</h1>
+                        <ul>
+                            <li>Website
+                                <ul>
+                                    <li>
+                                        Index
+                                    </li>
+                                    <li>Now</li>
+                                    <li>Contact</li>
+                                    <li>Blender</li>
+                                    <li>Now</li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li>
+                                Blender v1 of Thrusters
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="Now" style="text-align: left; width: 40%; float: left; height: 90%; white-space: normal;padding: 2vw; font-size: medium;">
+                        <h1>Now</h1>
+                        <ul>
+                            <li>Website
+                                <ul>
+                                    <li>User content?</li>
+                                    <li>Music page</li>
+                                    <li>Youtube channels that inspire thought?</li>
+                                    <li>Fill in about me</li>
+                                    <li>RSS feed for ql</li>
+                                    <li>Socials.htm</li>
+                                    <li>unix timestamp page with syntax for discord and a link to a good website for the unix</li>
+                                    <li>Mobileify this website, look up ways to tell what device the user is on</li>
+                                    <li>Drone.htm</li>
+                                    <li>photos.htm</li>
+                                    <li>Galaga</li>
+                                    <li>Downsize all images and vids to load faster for graic</li>
+                                </ul>
+                            </li>
+                            <br>
+                            <li>
+                                Blender projects
+                                <ul>
+                                    <li><a href="https://www.youtube.com/watch?v=dxO-DeAEZDM">This photo is would be cool to remake</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="Soon" style="text-align: left; width: 25%; float: left; height: 90%; white-space: normal;padding: 2vw;">
+                        <h1>Soon</h1>
+                        <ul>
+                            <li>Some form of NAS, store bought or home built.
+                            </li>
+                            <li>Repurpose Echo computer
+                            </li>
+                            <li>More blender projects
+                            </li>
+                            <li>Make a GTag movement single player game</li>
+                            <li>Light up echo disc irl</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+
         </div>
-    </div>
-    <script src="main.js"></script>
+        <script src="main.js"></script>
 </body>
 
 </html>
