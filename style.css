@@ -1,9 +1,7 @@
-
 @font-face {
     font-family: "RobotoMono";
     src: url("Fonts/RobotoMono-VariableFont_wght.ttf");
 }
-
 /* Common styles for both layouts */
 body {
     font-family: "RobotoMono";
@@ -12,37 +10,28 @@ body {
     white-space: nowrap;
     margin: 0;
     padding: 0;
+    overflow-y: scroll;
 }
-
 a {
     color: #f5f2ff;
     text-decoration: none;
 }
-
 a:hover {
     color: rgb(172, 172, 255);
 }
-
 h1, h2, h3, h4 {
     text-align: center;
     margin: 0;
     padding: 0;
 }
-#Content {
-    margin: 5%;
-    white-space:normal;
-}
-
 /* Desktop Styles */
 @media (min-aspect-ratio: 1/1) {
     .container {
         display: flex;
-    }
-
+   }
     .left-sidemobile {
         display: none;
-    }
-
+   }
     .left-sidedesktop {
         position: relative;
         min-width: 170px;
@@ -51,20 +40,18 @@ h1, h2, h3, h4 {
         text-align: right;
         min-height: 100vh;
         order: 1;
-    }
-
+   }
     .right-side {
         flex: 8;
         order: 2;
         overflow-y: auto;
-    }
-
+   }
     .author {
         text-align: left;
         position: fixed;
         bottom: 1vh;
         left: 1vw;
-    }
+   }
     .nav {
         text-align: right;
         width: 19%;
@@ -73,62 +60,75 @@ h1, h2, h3, h4 {
         padding-right: 1vw;
         padding-top: 2vh;
         line-height: 30px;
-    }
+   }
     em {
         float: right;
         padding-left: 1vw;
-    }
-
+   }
     table {
         margin-top: 5vh;
         padding-left: 1%;
-    }
-
+   }
     .times {
         margin: 0;
         padding: 0;
-    }
+   }
+    .contentdesktop {
+        display: block;
+        white-space:normal;
+        margin: 5%;
+   }
+    .contentmobile {
+        display: none;
+   }
 }
-
 /* Mobile Styles */
 @media (max-aspect-ratio: 1/1) {
     .container {
         display: flex;
         flex-direction: column;
         height: 100%;
-    }
-
+   }
     .left-sidedesktop {
         display: none;
-    }
-
+   }
     .left-sidemobile {
         order: 1;
         flex: 1;
-    }
+   }
     .right-side {
         order: 2;
         flex: 1;
-    }
+   }
     .author {
-        width: 100%;
         top: 0;
         border-bottom: 1px solid rgb(68, 68, 68);
-        padding: 10%;
-    }
+        padding: 5%;
+   }
     .nav {
-        width: 90%;
-        font-size: medium;
+        align-items: center;
+        text-align: center;
    }
-   .navwrap {
-    white-space: normal;
+    .navwrap {
+        white-space: normal;
+        text-align: center;
    }
-   em {
-    float: right;
-    padding-left: 1vw;
+    em {
+        float: right;
+        padding-left: 1vw;
    }
-   body {
-    overflow-x: hidden;
-    overflow-y: auto;
+    body {
+        width: 100%;
+        font-size: 2.5em;
+    }
+    .contentdesktop {
+        display: none;
+   }
+    .contentmobile {
+        display: block;
+        white-space:normal;
+        overflow-y: auto;
+        margin: 5%;
+        
    }
 }

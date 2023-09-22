@@ -47,3 +47,34 @@ setInterval(updateClock, 1000);
 
 updateUnixTime();
 setInterval(updateUnixTime, 1000);
+
+
+const videos = document.querySelectorAll('video');
+
+function playClosestVideo() {
+    const windowCenter = window.scrollY + window.innerHeight / 2;
+
+    let closestVideo = videos[0];
+    let closestDistance = Math.abs(windowCenter - videos[0].offsetTop - videos[0].offsetHeight / 2);
+
+    videos.forEach(video => {
+        const videoCenter = video.offsetTop + video.offsetHeight / 2;
+        const distance = Math.abs(windowCenter - videoCenter);
+
+        if (distance < closestDistance) {
+            closestDistance = distance;
+            closestVideo = video;
+        }
+    });
+
+    videos.forEach(video => {
+        if (video === closestVideo) {
+            video.play();
+        } else {
+            video.pause();
+        }
+    });
+}
+
+window.addEventListener('scroll', playClosestVideo);
+window.addEventListener('resize', playClosestVideo);
