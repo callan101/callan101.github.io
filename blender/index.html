@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="description" content="Blender renders">
     <meta name="author" content="Callan Sheldon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <style>
         /* Desktop Styles */
         @media (min-aspect-ratio: 1/1) {
@@ -70,7 +70,31 @@
             #hoverVideo:hover {
                 display: block;
             }
+            .contentdesktop {
+        display: block;
+        white-space:normal;
+        margin: 5%;
+   }
+    .contentmobile {
+        display: none;
+   }
         }
+
+        /* Mobile Styles */
+@media (max-aspect-ratio: 1/1) {
+
+    .contentdesktop {
+        display: none;
+   }
+    .contentmobile {
+        display: block;
+        white-space:normal;
+        overflow-y: auto;
+        margin: 8%;
+        
+   }
+}
+
     </style>
     <script src="https://www.youtube.com/player_api"></script>
 </head>
@@ -81,23 +105,23 @@
             <div class="author">
                 <div class="nav">
                     <div class="navwrap">
-                        <a href="index.htm">Index</a> <a href="now.htm">Now</a> <a href="about.htm">About</a> <a href="contact.htm">Contact</a>
+                        <a href="../index.html">Index</a> <a href="../now/">Now</a> <a href="../about/">About</a> <a href="../contact/">Contact</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="left-sidedesktop">
             <div class="nav">
-                <a href="index.htm">Index</a>
+                <a href="../index.html">Index</a>
                 <br>
-                <a href="now.htm">Now</a>
+                <a href="../now/">Now</a>
                 <br>
-                <a href="about.htm">About</a>
+                <a href="../about/">About</a>
                 <br>
-                <a href="contact.htm">Contact</a>
+                <a href="../contact/">Contact</a>
             </div>
             <div class="author">
-                <a href="index.htm">
+                <a href="../index.html">
                     <div class="unix-time"></div>
                     <div class="clock"></div>
                     <div class="formatted-date"></div>
@@ -107,40 +131,42 @@
         </div>
         <div class="right-side">
             <div class="contentmobile">
-
+                <div >
+                    <h1 style="text-align: center;padding-bottom: 5%;">My work in Blender</h1>
+                </div>
                 <div style="display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 100%;">
                     <div style="flex-basis: 48%; display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
-                        <img src="/imgs/blender/subdiviedNextrude.png" style="max-width: 100%; height: auto;">
+                        <img src="../imgs/blender/subdiviedNextrude.png" style="max-width: 100%; height: auto;">
                     </div>
                     <div style="flex-basis: 48%; display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
-                        <img src="/imgs/blender/A2_AlienPFP.png" style="max-width: 100%; height: auto;">
+                        <img src="../imgs/blender/A2_AlienPFP.png" style="max-width: 100%; height: auto;">
                     </div>
                     <div style="flex-basis: 48%; display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
-                        <img src="/imgs/blender/Thruster2.png" style="max-width: 100%; height: auto;">
+                        <img src="../imgs/blender/Thruster2.png" style="max-width: 100%; height: auto;">
                     </div>
                     <div style="flex-basis: 48%; display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
-                        <img src="/imgs/blender/clicccccc.png" style="max-width: 100%; height: auto;">
+                        <img src="../imgs/blender/clicccccc.png" style="max-width: 100%; height: auto;">
                     </div>
                     <div style="flex-basis: 48%; display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
-                        <img src="/imgs/blender/coollines.png" style="max-width: 100%; height: auto;">
+                        <img src="../imgs/blender/coollines.png" style="max-width: 100%; height: auto;">
                     </div>
                     <div style="flex-basis: 48%; display: flex; justify-content: center; align-items: center; margin-bottom: 10px;">
-                        <img src="/imgs/blender/fractal.png" style="max-width: 100%; height: auto;">
+                        <img src="./imgs/blender/fractal.png" style="max-width: 100%; height: auto;">
                     </div>
                 </div>
 
                 <div class="video-container">
                     <video autoplay loop muted playsinline style="width: 100%; max-width: 100vw;" id="video1">
-                        <source src="vids/ea2movinggeo.mp4" type="video/mp4">
+                        <source src="../vids/ea2movinggeo.mp4" type="video/mp4">
                     </video>
                     <video autoplay loop muted playsinline style="width: 100%; max-width: 100vw;" id="video2">
-                        <source src="vids/Geometric_snowflake_portal.mp4" type="video/mp4">
+                        <source src="../vids/Geometric_snowflake_portal.mp4" type="video/mp4">
                     </video>
                     <video autoplay loop muted playsinline style="width: 100%; max-width: 100vw;" id="video3">
-                        <source src="vids/spinny_stars.mp4" type="video/mp4">
+                        <source src="../vids/spinny_stars.mp4" type="video/mp4">
                     </video>
                     <video autoplay loop muted playsinline style="width: 100%; max-width: 100vw;" id="video4">
-                        <source src="vids/Thruster1.mp4" type="video/mp4">
+                        <source src="../vids/Thruster1.mp4" type="video/mp4">
                     </video>
                 </div>
                 <div style="height: 50vh;"></div>
@@ -161,20 +187,20 @@
                     </div>
                     <div class="video-container" style="display: flex;">
                         <video id="videoPlayer1" onmouseover="playVideo(1);" onmouseout="pauseVideo(1);" style="flex: 1; width: 45%; margin-right: 5px;" loop>
-                            <source src="vids/Geometric_snowflake_portal.mp4" type="video/mp4">
+                            <source src="../vids/Geometric_snowflake_portal.mp4" type="video/mp4">
                         </video>
 
                         <video id="videoPlayer2" onmouseover="playVideo(2);" onmouseout="pauseVideo(2);" style="flex: 1; width: 45%;" loop>
-                            <source src="vids/spinny_stars.mp4" type="video/mp4">
+                            <source src="../vids/spinny_stars.mp4" type="video/mp4">
                         </video>
                     </div>
                     <div class="video-container" style="display: flex;">
                         <video id="videoPlayer3" onmouseover="playVideo(3);" onmouseout="pauseVideo(3);" style="flex: 1; width: 45%; margin-right: 5px;" loop>
-                            <source src="vids/ea2movinggeo.mp4" type="video/mp4">
+                            <source src="../vids/ea2movinggeo.mp4" type="video/mp4">
                         </video>
 
                         <video id="videoPlayer4" onmouseover="playVideo(4);" onmouseout="pauseVideo(4);" style="flex: 1; width: 45%;" loop>
-                            <source src="vids/Thruster1.mp4" type="video/mp4">
+                            <source src="../vids/Thruster1.mp4" type="video/mp4">
                         </video>
                     </div>
 
@@ -229,7 +255,7 @@
             </div>
         </div>
     </div>
-    <script src="main.js"></script>
+    <script src="../main.js"></script>
 </body>
 
 </html>

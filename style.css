@@ -73,14 +73,12 @@ h1, h2, h3, h4 {
         margin: 0;
         padding: 0;
    }
-    .contentdesktop {
+    .content{
         display: block;
         white-space:normal;
         margin: 5%;
    }
-    .contentmobile {
-        display: none;
-   }
+
 }
 /* Mobile Styles */
 @media (max-aspect-ratio: 1/1) {
@@ -121,10 +119,8 @@ h1, h2, h3, h4 {
         width: 100%;
         font-size: 2em;
     }
-    .contentdesktop {
-        display: none;
-   }
-    .contentmobile {
+
+    .content{
         display: block;
         white-space:normal;
         overflow-y: auto;
