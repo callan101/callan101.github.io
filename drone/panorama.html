@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>360 Image Viewer</title>
+    <link rel="stylesheet" href="pannellum.css">
+    <script src="pannellum.js"></script>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #panorama {
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="panorama"></div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const imageIndex = parseInt(urlParams.get('image')) || 1;
+        const imagePaths = [
+            "../imgs/360/DJI_0371.JPG",
+            "../imgs/360/DJI_0375.JPG",
+            "../imgs/360/DJI_0385.JPG",
+            "../imgs/360/DJI_0401.JPG",
+            "../imgs/360/DJI_0416.JPG",
+            "../imgs/360/DJI_0429.JPG",
+            "../imgs/360/DJI_0446.JPG",
+            "../imgs/360/DJI_0465.JPG",
+            "../imgs/360/DJI_0478.JPG",
+            "../imgs/360/DJI_0502.JPG",
+            "../imgs/360/DJI_0510.JPG",
+
+        ];
+        pannellum.viewer('panorama', {
+            "type": "equirectangular",
+            "panorama": imagePaths[imageIndex - 1]
+        });
+    </script>
+</body>
+
+</html>

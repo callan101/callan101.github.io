@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Drone</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Callan's drone content">
+    <meta name="author" content="Callan Sheldon">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        img {
+            width: 100%;
+        };
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-sidemobile">
+            <div class="author">
+                <div class="nav">
+                    <div class="navwrap">
+                        <a href="../index.html">Index</a> <a href="../now/">Now</a> <a href="../about/">About</a> <a href="../contact/">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="left-sidedesktop">
+            <div class="nav">
+                <a href="../index.html">Index</a>
+                <br>
+                <a href="../now/">Now</a>
+                <br>
+                <a href="../about/">About</a>
+                <br>
+                <a href="../contact/">Contact</a>
+            </div>
+            <div class="author">
+                <a href="../index.html">
+                    <div class="unix-time"></div>
+                    <div class="clock"></div>
+                    <div class="formatted-date"></div>
+                    <strong>Callan (101) Sheldon</strong>
+                </a>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="content">
+                <h1>360 photos from my drone</h1>
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <div style="display: block; margin: 0 auto; text-align: left;width: 100%;">
+                        <table id="photo-table">
+                        </table>
+                    </div>
+                </div>
+                
+                <script>
+                    var table = document.getElementById("photo-table");
+                    var imageFiles = [
+                        "DJI_0371.png",
+                        "DJI_0375.png",
+                        "DJI_0385.png",
+                        "DJI_0401.png",
+                        "DJI_0416.png",
+                        "DJI_0429.png",
+                        "DJI_0446.png",
+                        "DJI_0465.png",
+                        "DJI_0478.png",
+                        "DJI_0502.png",
+                        "DJI_0510.png",
+                    ];
+                    var captions = [
+                        "Off the coast of Capitola, California. \n2023.08.04",
+                        "SS Palo Alto Aptos, California. \n2023.08.05",
+                        "Off the coast of Potbelly beach, Aptos, California. \n2023.08.05",
+                        "Sunset at Potbelly beach, Aptos, California. \n2023.08.05",
+                        "Richardson Bay, Sausalito, California. \n2023.08.06",
+                        "Richardson Bay, Sausalito, California. \n2023.08.06",
+                        "La Jolla Tide Pools (high tide), La Jolla, California. \n2023.09.26",
+                        "Sunset at La Jolla Tide Pools (high tide), La Jolla, California. \n2023.09.26",
+                        "Sunset Cliffs, San Diego, California. \n2023.09.27",
+                        "Black's Beach Vista Point, La Jolla, California. \n2023.09.28",
+                        "Mission bay, San Diego, California. \n2023.09.29",
+                    ];
+                
+                    for (var i = 0; i < imageFiles.length; i += 3) {
+                        var row = table.insertRow();
+                        
+                        for (var j = 0; j < 3; j++) {
+                            var index = i + j;
+                            if (index < imageFiles.length) {
+                                var cell = row.insertCell();
+                                var caption = document.createElement("div");
+                                caption.innerText = captions[index];
+                                cell.appendChild(caption);
+                
+                                cell.style.padding = "3%";
+
+                                var imageLink = document.createElement("a");
+                                imageLink.href = "panorama.html?image=" + (index + 1);
+                                var img = document.createElement("img");
+                                img.src = "../imgs/360planets/" + imageFiles[index];
+                                img.alt = "Image " + (index + 1);
+                                imageLink.appendChild(img);
+                                cell.appendChild(imageLink);
+                                
+                            }
+                        }
+                    }
+                </script>
+                
+
+            </div>
+
+        </div>
+    </div>
+    <script src="../main.js"></script>
+</body>
+
+</html>

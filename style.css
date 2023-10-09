@@ -24,6 +24,20 @@ h1, h2, h3, h4 {
     margin: 0;
     padding: 0;
 }
+/* Hide scrollbar for Firefox */
+body {
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+
+/* Hide scrollbar for IE, Edge, and Safari */
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
 /* Desktop Styles */
 @media (min-aspect-ratio: 1/1) {
     .container {

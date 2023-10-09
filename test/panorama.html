@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Socials</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Callan's socials">
+    <meta name="author" content="Callan Sheldon">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="pannellum.css">
+    <script src="pannellum.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-sidemobile">
+            <div class="author">
+                <div class="nav">
+                    <div class="navwrap">
+                        <a href="../index.html">Index</a> <a href="../now/">Now</a> <a href="../about/">About</a> <a href="../contact/">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="left-sidedesktop">
+            <div class="nav">
+                <a href="../index.html">Index</a>
+                <br>
+                <a href="../now/">Now</a>
+                <br>
+                <a href="../about/">About</a>
+                <br>
+                <a href="../contact/">Contact</a>
+            </div>
+            <div class="author">
+                <a href="../index.html">
+                    <div class="unix-time"></div>
+                    <div class="clock"></div>
+                    <div class="formatted-date"></div>
+                    <strong>Callan (101) Sheldon</strong>
+                </a>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="content" style="margin: 0;">
+            </div>
+            <div id="panorama"></div>
+
+    <script>
+        // Get the image parameter from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const imageIndex = parseInt(urlParams.get('image')) || 1; // Default to the first image if no parameter is provided
+
+        // Define an array of image paths
+        const imagePaths = [
+            "../imgs/360/DJI_0375.JPG", // Path to your first image
+            "../imgs/360/YourSecondImage.JPG", // Path to your second image, add more as needed
+            // Add more image paths as needed
+        ];
+
+        // Load the correct image based on the imageIndex
+        pannellum.viewer('panorama', {
+            "type": "equirectangular",
+            "panorama": imagePaths[imageIndex - 1] // Subtract 1 because arrays are 0-based
+            // Other configuration options here
+        });
+    </script>
+
+        </div>
+    </div>
+    </div>
+    <script src="../main.js"></script>
+</body>
+
+</html>
