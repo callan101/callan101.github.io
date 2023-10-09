@@ -75,10 +75,7 @@ body::-webkit-scrollbar-thumb {
         padding-top: 2vh;
         line-height: 30px;
    }
-    em {
-        float: right;
-        padding-left: 1vw;
-   }
+
     table {
         margin-top: 5vh;
         padding-left: 1%;
@@ -125,10 +122,7 @@ body::-webkit-scrollbar-thumb {
         white-space: normal;
         text-align: center;
    }
-    em {
-        float: right;
-        padding-left: 1vw;
-   }
+
     body {
         width: 100%;
         font-size: 2em;
