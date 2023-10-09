@@ -1,6 +1,6 @@
 from PIL import Image, ImageDraw
 import os
-
+"""
 # Specify input and output directories
 input_directory = "imgs/360planets"
 output_directory = "output/"
@@ -30,3 +30,26 @@ for filename in os.listdir(input_directory):
         print(f"Converted and cropped: {filename}")
 
 print("Conversion and cropping completed.")
+"""
+
+# Function to resize images in a folder
+def resize_images(folder_path):
+    for filename in os.listdir(folder_path):
+        if filename.endswith(".jpg") or filename.endswith(".png"):  # Check for image files
+            image_path = os.path.join(folder_path, filename)
+            try:
+                # Open the image file
+                with Image.open(image_path) as img:
+                    # Resize the image if its dimensions are 4096x4096
+                    if img.size == (4096, 4096):
+                        resized_img = img.resize((2048, 2048))
+                        # Save the resized image, overwriting the original file
+                        resized_img.save(image_path)
+                        print(f"Resized {filename} successfully.")
+            except Exception as e:
+                print(f"Error resizing {filename}: {e}")
+
+# Example usage
+if __name__ == "__main__":
+    folder_path = "output/"
+    resize_images(folder_path)
