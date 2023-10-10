@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-    <title>Drone</title>
+    <title>360 photos</title>
     <meta charset="UTF-8">
-    <meta name="description" content="Callan's drone content">
+    <meta name="description" content="Callan's 360 photos">
     <meta name="author" content="Callan Sheldon">
     <link rel="stylesheet" href="../style.css">
     <style>
         img {
             width: 100%;
         };
-
+        
     </style>
 </head>
 
@@ -69,7 +69,7 @@
                         "DJI_0478.png",
                         "DJI_0502.png",
                         "DJI_0510.png",
-                    ];
+                        ].reverse();
                     var captions = [
                         "Off the coast of Capitola, California. \n2023.08.04",
                         "SS Palo Alto Aptos, California. \n2023.08.05",
@@ -82,7 +82,7 @@
                         "Sunset Cliffs, San Diego, California. \n2023.09.27",
                         "Black's Beach Vista Point, La Jolla, California. \n2023.09.28",
                         "Mission bay, San Diego, California. \n2023.09.29",
-                    ];
+                        ].reverse();
                 
                     for (var i = 0; i < imageFiles.length; i += 3) {
                         var row = table.insertRow();
@@ -96,6 +96,7 @@
                                 cell.appendChild(caption);
                 
                                 cell.style.padding = "3%";
+                                cell.style.width = "27%";
 
                                 var imageLink = document.createElement("a");
                                 imageLink.href = "panorama.html?image=" + (index + 1);
