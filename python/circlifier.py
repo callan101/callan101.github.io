@@ -17,6 +17,8 @@ def convert_and_crop_to_circle(input_path, output_path):
     mask_draw = ImageDraw.Draw(mask)
     mask_draw.ellipse((0, 0, width, height), fill=255)
     result = Image.new("RGBA", (width, height))
+    print("Width : " + width)
+    print("Height : " + height)
     result.paste(img, mask=mask)
     result.save(output_path, "PNG")
 
