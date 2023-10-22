@@ -26,7 +26,7 @@
     <div id="panorama"></div>
     <script>
         const urlParams = new URLSearchParams(window.location.search);
-        const imageIndex = parseInt(urlParams.get('image')) || 1;
+        const imageIndex = parseInt(urlParams.get('image'))|| 1;
         const imagePaths = [
             "../imgs/360/DJI_0371.JPG",
             "../imgs/360/DJI_0375.JPG",
@@ -39,10 +39,10 @@
             "../imgs/360/DJI_0478.JPG",
             "../imgs/360/DJI_0502.JPG",
             "../imgs/360/DJI_0510.JPG",
-        ];
+        ].reverse();
         pannellum.viewer('panorama', {
             "type": "equirectangular",
-            "panorama": imagePaths[imageIndex - 1]
+            "panorama": imagePaths[imageIndex-1]
         });
     </script>
 </body>
