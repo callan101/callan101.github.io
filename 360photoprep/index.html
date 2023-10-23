@@ -6,6 +6,12 @@
     <meta name="description" content="Callan's blank reference">
     <meta name="author" content="Callan Sheldon">
     <link rel="stylesheet" href="../style.css">
+    <style>
+        img {
+        display: block;
+        margin: 0 auto;
+    }
+    </style>
 </head>
 
 <body>
@@ -41,14 +47,62 @@
         <div class="right-side">
             <div class="content">
                 <h1>360 photo order of operations</h1>
-                <p style="float: left;">
-                    I take 360 photos with my <a href="https://www.dji.com/mini-3-pro">DJI Mini 3 Pro</a>. It saves 8192x4096 jpgs that are about 8mb each. I use the original full resolution images for the fullscreen panos on <a href="../360-photos/panorama.html">the pano viewer page</a>
+                <div style="text-align: center;">
+                    <em style="font-size: .75em;">
+                    This is mostly for me to remember the process so I can keep updating <a href="../360-photos/">my 360 photos page.</a>
+                </em>
+                </div>
+                <p>
+                    <br>
+                     I take 360 photos with my <a href="https://www.dji.com/mini-3-pro">DJI Mini 3 Pro</a>. It saves 8192x4096 jpgs that are about 8mb each. I use the original full resolution images for the fullscreen panos on <a href="../360-photos/panorama.html">the viewer page</a>
+                    <br>
+                    <img src="../imgs/360prep/DJI_0597.JPG" width="800em" style="max-width: 70%;">
+                    <ol>
+                        <li>
+                            Take all the original 360 photos off the drone and put them in ../imgs/360/tmp
+                        </li>
+                        <li>
+                            Run a photoshop batch action that you have saved previously
+                            <br> If you don't have the batch command saved or are just doing it to one image then start recording an action by going to window > Actions and in the window start recording
+                            <ol>
+                                <li>
+                                    Flip the image vertically
+                                </li>
+                                <li>
+                                    Apply a Polar coordinates distortion filter to the image
+                                </li>
+                                <li>
+                                    Squish the image horizontally so it's a square (4096x4096)
+                                </li>
+                            </ol>
+                            Stop recording
+                            <br><img src="../imgs/360prep/DJI_0597prep.jpg" width="500em" style="max-width: 90%;float: right;" alt="Mini planet 360 photo, 4096x4096">
+                            <br> The outputs from that should look like this 
+                            <br>
+                        </li>
+                        Now finally to get the right size and shape I had gpt3.5 write a couple scripts to crop them into circles and divide the resolution in half until you're happy with it.
+                        <br>
+                        <br>
+                        <li>
+                            Run ../python/circlifier.py to turn them all into circle pngs
+                        </li>
+                        <li>
+                            Run ../python/shinker.py until it is small enough for your use (I run it 3 times so the images are 512x512 for better load times.)
+                        </li>
+                    </ol>
+                    <div style="display: block; clear: both; text-align: center;">
+                        <br><br>
+                        <img src="../imgs/360prep/DJI_0597prep.png" width="80%" alt="360 photo in planet view, it is a transparent circle png">
+                    </div>
+                    <p>
+                        Finally if you're me, update the captions and imageFiles arrays in <a href="../360-photos/">../360-photos/</a> and also the imagePaths in <a href="../360-photos/panorama.html">../360-photos/panorama.html</a>
+                    </p>
+                    
                 </p>
-                <img src="../imgs/360/DJI_0465.JPG" width="80%" style="float: right; display: inline">
             </div>
         </div>
         <script src="../main.js"></script>
-    </div> 
+    </div>
 </body>
 
 </html>

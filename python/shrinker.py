@@ -14,8 +14,10 @@ def resize_images(folder_path):
                         # Resize the image to half the resolution
                         resized_img = img.resize((img.size[0] // 2, img.size[1] // 2))
                         # Save the resized image, overwriting the original file
+                        print(img.size[0])
                         resized_img.save(image_path)
                         print(f"Resized {filename} successfully.")
+                        print(img.size[0])
                     else:
                         print(f"File {filename} is not a square.")
             except Exception as e:
@@ -23,5 +25,5 @@ def resize_images(folder_path):
 
 # Example usage
 if __name__ == "__main__":
-    folder_path = "C:/Users/callan/Documents/GitHub/callan101.github.io/imgs/360planets"
+    folder_path = "output"
     resize_images(folder_path)

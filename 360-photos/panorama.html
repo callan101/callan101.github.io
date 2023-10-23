@@ -39,10 +39,18 @@
             "../imgs/360/DJI_0478.JPG",
             "../imgs/360/DJI_0502.JPG",
             "../imgs/360/DJI_0510.JPG",
+            "../imgs/360/DJI_0542.JPG",
+            "../imgs/360/DJI_0549.JPG",
+            "../imgs/360/DJI_0558.JPG",
+            "../imgs/360/DJI_0572.JPG",
+            "../imgs/360/DJI_0585.JPG",
+            "../imgs/360/DJI_0597.JPG",
+
         ].reverse();
         pannellum.viewer('panorama', {
             "type": "equirectangular",
-            "panorama": imagePaths[imageIndex-1]
+            "panorama": imagePaths[imageIndex-1],
+            "autoLoad": true
         });
     </script>
 </body>

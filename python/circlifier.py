@@ -2,7 +2,7 @@ from PIL import Image, ImageDraw
 import os
 
 # Specify input and output directories
-input_directory = "imgs/360planets"
+input_directory = "imgs/360prep"
 output_directory = "output/"
 
 # Ensure the output directory exists
@@ -17,8 +17,8 @@ def convert_and_crop_to_circle(input_path, output_path):
     mask_draw = ImageDraw.Draw(mask)
     mask_draw.ellipse((0, 0, width, height), fill=255)
     result = Image.new("RGBA", (width, height))
-    print("Width : " + width)
-    print("Height : " + height)
+    print("Width : " + str(width))
+    print("Height : " + str(height))
     result.paste(img, mask=mask)
     result.save(output_path, "PNG")
 
