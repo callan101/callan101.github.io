@@ -6,6 +6,30 @@
     <meta name="description" content="Callan's drone footage">
     <meta name="author" content="Callan Sheldon">
     <link rel="stylesheet" href="../../style.css">
+    <style>
+        .video-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Set the height of the wrapper to 100% of the viewport height */
+}
+
+.video-container {
+    position: relative;
+    width: 80%;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    margin-bottom: 20px; /* Add some margin between the videos */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+    </style>
 </head>
 
 <body>
@@ -44,46 +68,18 @@
                 <p>
                     <a href="../contact/">Contact me if you are interested in using any of my footage.</a>
                 </p>
-                <div class="youtube-player" data-id="ErmnKP-w4mg"></div>
+
+                <div class="video-wrapper">
+                    <div class="video-container">
+                        <iframe style="border: none;" src="https://www.youtube.com/embed/agJfzodeMRQ"></iframe>
+                    </div>
+                    <div class="video-container">
+                        <iframe style="border: none;" src="https://www.youtube.com/embed/QvslupB6Fik"></iframe>
+                    </div>
+                </div>                
             </div>
         </div>
         <script src="../main.js"></script>
-        <script>
-            /*
-             * Light YouTube Embeds by @labnol
-             * Credit: https://www.labnol.org/
-             */
-          
-            function labnolIframe(div) {
-              var iframe = document.createElement('iframe');
-              iframe.setAttribute('src', 'https://www.youtube.com/embed/' + div.dataset.id + '?autoplay=1');
-              iframe.setAttribute('frameborder', '0');
-              iframe.setAttribute('allowfullscreen', '1');
-              iframe.setAttribute('allow', 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture');
-              div.parentNode.replaceChild(iframe, div);
-            }
-          
-            function initYouTubeVideos() {
-              var playerElements = document.querySelectorAll('.youtube-player');
-              for (var n = 0; n < playerElements.length; n++) {
-                var videoId = playerElements[n].dataset.id;
-                var div = document.createElement('div');
-                div.setAttribute('data-id', videoId);
-                var thumbNode = document.createElement('img');
-                thumbNode.src = '//i.ytimg.com/vi/ID/hqdefault.jpg'.replace('ID', videoId);
-                div.appendChild(thumbNode);
-                var playButton = document.createElement('div');
-                playButton.setAttribute('class', 'play');
-                div.appendChild(playButton);
-                div.onclick = function () {
-                  labnolIframe(this);
-                };
-                playerElements[n].appendChild(div);
-              }
-            }
-          
-            document.addEventListener('DOMContentLoaded', initYouTubeVideos);
-          </script>
     </div>
 </body>
 
