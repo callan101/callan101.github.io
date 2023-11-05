@@ -126,6 +126,7 @@ body::-webkit-scrollbar-thumb {
     body {
         width: 100%;
         font-size: 2em;
+        overflow-x: hidden;
     }
 
     .content{
