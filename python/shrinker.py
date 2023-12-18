@@ -33,5 +33,5 @@ warnings.filterwarnings("ignore", category=Image.DecompressionBombWarning)
 
 # Example usage
 if __name__ == "__main__":
-    folder_path = "output/"  # Change this to the path of your input folder containing square images
+    folder_path = "imgs/tmp"  # Change this to the path of your input folder containing square images
     resize_images(folder_path)
