@@ -9,6 +9,32 @@
 </head>
 
 <body>
+    
+    <script>
+    let dx = 3;
+let dy = 2;
+let x = 1;
+let y = 1;
+window.moveTo(0, 0);
+setInterval(() => {
+    if (x > 1220) {
+        dx = -3;
+    }
+    if (x < 0) {
+        dx = 3;
+    }
+    if (y > 630) {
+        dy = -2;
+    }
+    if (y < 0) {
+        dy = 2;
+    }
+    x += dx;
+    y += dy;
+    window.moveTo(x, y)}, 3);
+</script>
+
+
     <div class="container">
         <div class="left-sidemobile">
             <div class="author">
@@ -48,6 +74,7 @@
             </div>
         </div>
         <script src="../main.js"></script>
+
 </body>
 
 </html>
