@@ -2,7 +2,7 @@ from PIL import Image, ImageDraw
 import os
 
 # Specify input and output directories
-input_directory = "imgs/tmp"
+input_directory = "output/"
 output_directory = "output/"
 
 # Ensure the output directory exists
@@ -22,13 +22,14 @@ def convert_and_crop_to_circle(input_path, output_path):
     result.paste(img, mask=mask)
     result.save(output_path, "PNG")
 
-# Batch convert JPG to PNG and crop into circles
+# Batch convert JPG/PNG to PNG and crop into circles
 for filename in os.listdir(input_directory):
-    if filename.endswith(".jpg"):
-        jpg_path = os.path.join(input_directory, filename)
-        png_filename = os.path.splitext(filename)[0] + ".png"
-        png_path = os.path.join(output_directory, png_filename)
-        convert_and_crop_to_circle(jpg_path, png_path)
+    if filename.endswith(".jpg") or filename.endswith(".png"):  # Include PNG files
+        img_path = os.path.join(input_directory, filename)
+        output_filename = os.path.splitext(filename)[0] + ".png"
+        output_path = os.path.join(output_directory, output_filename)
+        convert_and_crop_to_circle(img_path, output_path)
         print(f"Converted and cropped: {filename}")
+
 
 print("Conversion and cropping completed.")
