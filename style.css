@@ -3,7 +3,6 @@
     src: url("Fonts/RobotoMono-VariableFont_wght.ttf");
 }
 
-/*test*/
 
 /* Common styles for both layouts */
 body {
@@ -80,6 +79,7 @@ body::-webkit-scrollbar-thumb {
 
     table {
         padding-left: 1vw;
+        margin-top: 5vh;
    }
     .times {
         margin: 0;
