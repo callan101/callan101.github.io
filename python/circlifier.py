@@ -2,7 +2,7 @@ from PIL import Image, ImageDraw
 import os
 
 # Specify input and output directories
-input_directory = "output/"
+input_directory = "imgs/tmp/"
 output_directory = "output/"
 
 # Ensure the output directory exists

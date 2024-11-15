@@ -76,8 +76,7 @@ body::-webkit-scrollbar-thumb {
    }
 
     table {
-        margin-top: 5vh;
-        padding-left: 1%;
+        padding-left: 1vw;
    }
     .times {
         margin: 0;

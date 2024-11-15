@@ -49,6 +49,7 @@ updateUnixTime();
 setInterval(updateUnixTime, 1000);
 
 
+
 const videos = document.querySelectorAll('video');
 
 function playClosestVideo() {
@@ -76,5 +77,3 @@ function playClosestVideo() {
     });
 }
 
-window.addEventListener('scroll', playClosestVideo);
-window.addEventListener('resize', playClosestVideo);

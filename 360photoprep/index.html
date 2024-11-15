@@ -3,6 +3,7 @@
 <head>
     <title>Manageing 360 photos</title>
     <meta charset="UTF-8">
+    <link rel="icon" href="../favicon.png"/>
     <meta name="description" content="Callan's blank reference">
     <meta name="author" content="Callan Sheldon">
     <link rel="stylesheet" href="../style.css">
@@ -20,7 +21,11 @@
             <div class="author">
                 <div class="nav">
                     <div class="navwrap">
-                        <a href="../index.html">Index</a> <a href="../now/">Now</a> <a href="../about/">About</a> <a href="../contact/">Contact</a>
+                        <a href="../index.html">Index</a>
+                        <a href="../feed.xml">RSS</a>
+                        <a href="../now/">Now</a>
+                        <a href="../about/">About</a>
+                        <a href="../contact/">Contact</a>
                     </div>
                 </div>
             </div>
@@ -28,6 +33,8 @@
         <div class="left-sidedesktop">
             <div class="nav">
                 <a href="../index.html">Index</a>
+                <br>
+                <a href="../feed.xml">RSS</a>
                 <br>
                 <a href="../now/">Now</a>
                 <br>
@@ -54,12 +61,12 @@
                 </div>
                 <p>
                     <br>
-                     I take 360 photos with my <a href="https://www.dji.com/mini-3-pro">DJI Mini 3 Pro</a>. It saves 8192x4096 jpgs that are about 8mb each. I use the original full resolution images for the fullscreen panos on <a href="../360-photos/panorama.html">the viewer page</a>
+                     I take 360 photos with my <a href="https://www.dji.com/mini-3-pro">DJI Mini 3 Pro</a>. It saves 35 raws that are 8-12mb each. I wish I could use the original full resolution images for the fullscreen panos on <a href="../360-photos/panorama.html">the viewer page but they would talk years to load on mobile (or any intenet connection that isn't fiber) so I compress them a bit.</a>
                     <br>
-                    <img src="../imgs/360prep/DJI_0597.jpg" width="800em" style="max-width: 70%;">
+                    <img src="../imgs/360prep/2024-06-17_PetalumaDocking.jpg" width="800em" style="max-width: 70%;">
                     <ol>
                         <li>
-                            Take all the original 360 photos off the drone and put them in ../imgs/360/tmp
+                            Take all the original photos off the drone and stich them useing Panorama Stitcher. Pick which one you're going to use 
                         </li>
                         <li>
                             Run a photoshop batch action that you have saved previously
@@ -76,7 +83,7 @@
                                 </li>
                             </ol>
                             Stop recording
-                            <br><img src="../imgs/360prep/DJI_0597prep.jpg" width="500em" style="max-width: 90%;float: right;" alt="Mini planet 360 photo, 4096x4096">
+                            <br><img src="../imgs/360prep/2024-06-17_PetalumaDocking_planet_withcrust.jpg" width="500em" style="max-width: 90%;float: right;" alt="Mini planet 360 photo, 4096x4096">
                             <br> The outputs from that should look like this 
                             <br>
                         </li>
@@ -92,7 +99,7 @@
                     </ol>
                     <div style="display: block; clear: both; text-align: center;">
                         <br><br>
-                        <img src="../imgs/360prep/DJI_0597prep.png" width="80%" alt="360 photo in planet view, it is a transparent circle png">
+                        <img src="../imgs/360prep/2024-06-17_PetalumaDocking_planet.png" width="40%" alt="360 photo in planet view, it is a transparent circle png">
                     </div>
                     <p>
                         Finally if you're me, update the captions and imageFiles arrays in <a href="../360-photos/">../360-photos/</a> and also the imagePaths in <a href="../360-photos/panorama.html">../360-photos/panorama.html</a>

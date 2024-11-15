@@ -1,6 +1,12 @@
 import warnings
-from PIL import Image
+from PIL import Image, ImageFile
 import os
+
+# Suppress DecompressionBombWarning
+warnings.filterwarnings("ignore", category=Image.DecompressionBombWarning)
+
+# This handles truncated images gracefully
+ImageFile.LOAD_TRUNCATED_IMAGES = True
 
 MAX_IMAGE_SIZE = 900000000  # Set your desired maximum image size
 
@@ -8,11 +14,14 @@ MAX_IMAGE_SIZE = 900000000  # Set your desired maximum image size
 def resize_images(folder_path):
     for filename in os.listdir(folder_path):
         if filename.endswith(".png"):  # Check for image files
-            print(filename)
+            print(f"Processing {filename}")
             image_path = os.path.join(folder_path, filename)
+            
+            # Check if the file is too large
             if os.path.getsize(image_path) > MAX_IMAGE_SIZE:
                 print(f"Skipping {filename} due to excessive size.")
                 continue
+
             try:
                 # Open the image file
                 with Image.open(image_path) as img:
@@ -24,12 +33,11 @@ def resize_images(folder_path):
                         resized_img.save(image_path)
                         print(f"Resized {filename} to 512x512 successfully.")
                     else:
-                        print(f"File {filename} is not a square.")
+                        print(f"File {filename} is not a square image.")
+            except IOError as e:
+                print(f"Error opening {filename}: {e}")
             except Exception as e:
                 print(f"Error resizing {filename}: {e}")
-
-# Suppress DecompressionBombWarning
-warnings.filterwarnings("ignore", category=Image.DecompressionBombWarning)
 
 # Example usage
 if __name__ == "__main__":

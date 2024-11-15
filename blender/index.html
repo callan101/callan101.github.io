@@ -5,6 +5,7 @@
     <title>Renders</title>
     <html lang="en">
     <meta charset="UTF-8">
+    <link rel="icon" href="../favicon.png"/>
     <meta name="description" content="Blender renders">
     <meta name="author" content="Callan Sheldon">
     <link rel="stylesheet" href="../style.css">
@@ -100,12 +101,17 @@
 </head>
 
 <body>
+    
     <div class="container">
         <div class="left-sidemobile">
             <div class="author">
                 <div class="nav">
                     <div class="navwrap">
-                        <a href="../index.html">Index</a> <a href="../now/">Now</a> <a href="../about/">About</a> <a href="../contact/">Contact</a>
+                        <a href="../index.html">Index</a>
+                        <a href="../feed.xml">RSS</a>
+                        <a href="../now/">Now</a>
+                        <a href="../about/">About</a>
+                        <a href="../contact/">Contact</a>
                     </div>
                 </div>
             </div>
@@ -113,6 +119,8 @@
         <div class="left-sidedesktop">
             <div class="nav">
                 <a href="../index.html">Index</a>
+                <br>
+                <a href="../feed.xml">RSS</a>
                 <br>
                 <a href="../now/">Now</a>
                 <br>
@@ -256,6 +264,10 @@
         </div>
     </div>
     <script src="../main.js"></script>
+    <script>
+        window.addEventListener('scroll', playClosestVideo);
+        window.addEventListener('resize', playClosestVideo);
+    </script>
 </body>
 
 </html>

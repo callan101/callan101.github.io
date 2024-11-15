@@ -1,0 +1,63 @@
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://callan101.com/feed.xml</id>
+    <title>Callan's cool blog</title>
+    <updated>2024-11-12T00:00:00.000Z</updated>
+    <generator>Callan's hands</generator>
+    <author>
+        <name>Callan</name>
+        <email>hello [at] 63616c6c616e313031.com</email>
+        <uri>https://callan101.com</uri>
+    </author>
+    <link rel="alternate" href="https://uhh.63616c6c616e313031.com/"/>
+    <subtitle>Callan's cool blog</subtitle>
+    <rights>All rights reserved 2024, Callan.</rights>
+    <entry>
+        <title type="html"><![CDATA[Initialization]]></title>
+        <id>https://callan101.com/rss/</id>
+        <link href="https://callan101.com/rss/article1.html"/>
+        <updated>2024-11-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Here's the summary!...]]></summary>
+        <content type="html"><![CDATA[<p>
+                    Good Morning. <br> This is the first article in my <a href="../feed.xml"> RSS feed</a>.<br>
+                    <br>
+                    <h2>
+                        Updates include
+                    </h2>
+                    <ul>
+                        <li><a href="../photos/">Photos page</a>
+                            <ul>
+                                <li>Heceta Lighthouse</li>
+                                <li>Sonoma Mountain</li>
+                                <li>Monogram Lake</li>
+                                <li>Park Butte</li>
+                            </ul>
+                        </li>
+                        <li><a href="../360-photos/">More 360 photos</a>
+                            <ul>
+                                <li>Sumas Mountain</li>
+                                <li>Oyster Dome</li>
+                                <li>Deception Pass</li>
+                                <li>Kerry Park</li>
+                                <li>Ocho Totality <em>aka Arkansas eclipse</em></li>
+                                <li>Sonoma Mountain</li>
+                                <li>Downtown Petaluma</li>
+                                <li>Park Butte</li>
+                            </ul>
+                        </li>
+                        <li><a href="../index.html">New navigation hierarchy</a></li>
+                        <a href="../content i like/"></a>
+                        <li>New Content page</li>
+
+                        <a href="../360photoprep/"></a>
+                        <li>Updated 360 photo prep images and process</li>
+
+                    </ul>
+                </p>
+]]></content>
+        <author>
+            <name>Callan</name>
+            <email>hello [at] callan101.com</email>
+            <uri>https://callan101.com/</uri>
+        </author>
+    </entry>
+</feed>
