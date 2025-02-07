@@ -1,150 +1,151 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Now</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="My present">
-    <meta name="author" content="Callan Sheldon">
-    <link rel="stylesheet" href="../style.css">
-    <style>/* Desktop Styles */
-        @media (min-aspect-ratio: 1/1) {
-            .contentdesktop {
+        <title>Now</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="My present">
+        <meta name="author" content="Callan Sheldon">
+        <link rel="stylesheet" href="../style.css">
+        <style>/* Desktop Styles */
+@media (min-aspect-ratio: 1/1) {
+        .contentdesktop {
                 display: block;
                 white-space:normal;
                 margin: 5%;
-           }
-            .contentmobile {
-                display: none;
-           }
         }
-        /* Mobile Styles */
-        @media (max-aspect-ratio: 1/1) {
-            .contentdesktop {
+        .contentmobile {
                 display: none;
-           }
-            .contentmobile {
-                display: block;
-                white-space:normal;
-                overflow-y: auto;
-                margin: 8%;
-                
-           }
-        }</style>
+        }
+}
+            /* Mobile Styles */
+            @media (max-aspect-ratio: 1/1) {
+                    .contentdesktop {
+                            display: none;
+                    }
+                    .contentmobile {
+                            display: block;
+                            white-space:normal;
+                            overflow-y: auto;
+                            margin: 8%;
+
+                    }
+            }</style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="left-sidemobile">
-            <div class="author">
-                <div class="nav">
-                    <div class="navwrap">
-                        <a href="../index.html">Index</a>
-                        <a href="../feed.xml">RSS</a>
-                        <a href="../now/">Now</a>
-                        <a href="../about/">About</a>
-                        <a href="../contact/">Contact</a>
-                    </div>
+        <div class="container">
+                <div class="left-sidemobile">
+                        <div class="author">
+                                <div class="nav">
+                                        <div class="navwrap">
+                                                <a href="../index.html">Index</a>
+                                                <a href="../feed.xml">RSS</a>
+                                                <a href="../now/">Now</a>
+                                                <a href="../about/">About</a>
+                                                <a href="../contact/">Contact</a>
+                                        </div>
+                                </div>
+                        </div>
                 </div>
-            </div>
-        </div>
-        <div class="left-sidedesktop">
-            <div class="nav">
-                <a href="../index.html">Index</a>
-                <br>
-                <a href="../feed.xml">RSS</a>
-                <br>
-                <a href="../now/">Now</a>
-                <br>
-                <a href="../about/">About</a>
-                <br>
-                <a href="../contact/">Contact</a>
-            </div>
-            <div class="author">
-                <a href="../index.html">
-                    <div class="unix-time"></div>
-                    <div class="clock"></div>
-                    <div class="formatted-date"></div>
-                    <strong>Callan (101) Sheldon</strong>
-                </a>
-            </div>
-        </div>
-        <div class="right-side">
-            <div class="contentmobile">
-                <div class="container">
-                    <div id="Now" style="font-size: 1.2em;">
-                        <h1>Now</h1>
-                        <ul>
-                            <li>Continuing this website
-                            </li>
-                            <li>Touching gass
-                                <ul>
-                                    <li>Climbing</li>
-                                    <li>Badminton</li>
-                                    <li>Cycling (and mountain biking)</li>
-                                    <li>Hiking</li>
-                                    <li>Snowboarding soon</li>
-                                </ul>
-                            </li>
-                            <li>Drone excurstions</li>
-                        </ul>
-                    </div>
-                    <div id="Recent">
-                        <h1>Recent</h1>
-                        <ul>
-                            <li>This website
-                            </li>
-                            <li><a href="../blender/">Blender renders and modeling</a>  </li>
-                        </ul>
-                    </div>
-                    <div id="Soon">
-                        <h1>Soon</h1>
-                        <ul>
-                            <li>Figure out a bulk storage system that will last forever</li>
-                            <li>Learn Godot</li>
-                            <li>Learn Unreal</li>
-                        </ul>
-                    </div>
+                <div class="left-sidedesktop">
+                        <div class="nav">
+                                <a href="../index.html">Index</a>
+                                <br>
+                                <a href="../feed.xml">RSS</a>
+                                <br>
+                                <a href="../now/">Now</a>
+                                <br>
+                                <a href="../about/">About</a>
+                                <br>
+                                <a href="../contact/">Contact</a>
+                        </div>
+                        <div class="author">
+                                <a href="../index.html">
+                                        <div class="unix-time"></div>
+                                        <div class="clock"></div>
+                                        <div class="formatted-date"></div>
+                                        <strong>Callan (101) Sheldon</strong>
+                                </a>
+                        </div>
                 </div>
-                
-            </div>
-            <div class="contentdesktop" style="white-space: normal;">
-                <div class="container">
-                    <div id="Recent" style="text-align: left; width: 25%; float: left; height: 90%; white-space: normal;padding: 2vw;">
-                        <h1>Recent</h1>
-                        <ul>
-                            <li>This website
-                            </li>
-                            <li>Moveing to Seattle</li>
-                        </ul>
-                    </div>
-                    <div id="Now" style="text-align: left; width: 40%; float: left; height: 90%; white-space: normal;padding: 2vw; font-size: medium;">
-                        <h1>Now</h1>
-                        <ul>
-                            <li>Continuing this website
-                            </li>
-                            <li>Touching gass
-                                <ul>
-                                    <li>Climbing</li>
-                                    <li>Badminton</li>
-                                    <li>Cycling (and mountain biking)</li>
-                                    <li>Hiking</li>
-                                    <li>Snowboarding soon</li>
-                                </ul>
-                            </li>
-                            <li>Drone excurstions</li>
-                        </ul>
-                    </div>
-                    <div id="Soon" style="text-align: left; width: 25%; float: left; height: 90%; white-space: normal;padding: 2vw;">
-                        <h1>Soon</h1>
-                        <ul>
-                            <li>Learn Unreal</li>
-                            <li>Firefighting training</li>
-                        </ul>
-                    </div>
+                <div class="right-side">
+                        <div class="contentmobile">
+                                <div class="container">
+                                        <div id="Now" style="font-size: 1.2em;">
+                                                <h1>Now</h1>
+                                                <ul>
+                                                        <li>Continuing this website
+                                                        </li>
+                                                        <li>Touching gass
+                                                                <ul>
+                                                                        <li>Climbing</li>
+                                                                        <li>Badminton</li>
+                                                                        <li>Cycling (and mountain biking)</li>
+                                                                        <li>Hiking</li>
+                                                                        <li>Snowboarding</li>
+                                                                </ul>
+                                                        </li>
+                                                        <li><a href="../dronevod/">Drone excurstions</a>
+                                                        <li><a href="../photos/">Taking Photos</a>
+                                                </ul>
+                                        </div>
+                                        <div id="Recent">
+                                                <h1>Recent</h1>
+                                                <ul>
+                                                        <li>This website
+                                                        </li>
+                                                        <li><a href="../blender/">Blender renders and modeling</a>  </li>
+                                                </ul>
+                                        </div>
+                                        <div id="Soon">
+                                                <h1>Soon</h1>
+                                                <ul>
+                                                        <li>Figure out a bulk storage system that will last forever</li>
+                                                        <li>Learn Godot</li>
+                                                        <li>Learn Unreal</li>
+                                                </ul>
+                                        </div>
+                                </div>
+
+                        </div>
+                        <div class="contentdesktop" style="white-space: normal;">
+                                <div class="container">
+                                        <div id="Recent" style="text-align: left; width: 25%; float: left; height: 90%; white-space: normal;padding: 2vw;">
+                                                <h1>Recent</h1>
+                                                <ul>
+                                                        <li>This website
+                                                        </li>
+                                                        <li>Moveing to Seattle</li>
+                                                </ul>
+                                        </div>
+                                        <div id="Now" style="text-align: left; width: 40%; float: left; height: 90%; white-space: normal;padding: 2vw; font-size: medium;">
+                                                <h1>Now</h1>
+                                                <ul>
+                                                        <li>Continuing this website
+                                                        </li>
+                                                        <li>Touching gass
+                                                                <ul>
+                                                                        <li>Climbing</li>
+                                                                        <li>Badminton</li>
+                                                                        <li>Cycling (and mountain biking)</li>
+                                                                        <li>Hiking</li>
+                                                                        <li>Snowboarding soon</li>
+                                                                </ul>
+                                                        </li>
+                                                        <li>Drone excurstions</li>
+                                                </ul>
+                                        </div>
+                                        <div id="Soon" style="text-align: left; width: 25%; float: left; height: 90%; white-space: normal;padding: 2vw;">
+                                                <h1>Soon</h1>
+                                                <ul>
+                                                        <li>Learn Unreal</li>
+                                                        <li>Firefighting training</li>
+                                                </ul>
+                                        </div>
+                                </div>
+                        </div>
                 </div>
-            </div>
-        </div>
-        <script src="../main.js"></script>
+                <script src="../main.js"></script>
 </body>
 
 </html>

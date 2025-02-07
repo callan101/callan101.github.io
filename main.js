@@ -1,3 +1,4 @@
+/*
 function updateUnixTime() {
     const unixTimeElements = document.querySelectorAll(".unix-time");
     const now = new Date();
@@ -8,15 +9,16 @@ function updateUnixTime() {
         element.textContent = unixTime;
     });
 }
-
+*/
 function updateClock() {
     const clockElements = document.querySelectorAll(".clock");
     const now = new Date();
 
     const hours = now.getHours().toString().padStart(2, "0");
     const minutes = now.getMinutes().toString().padStart(2, "0");
-    const seconds = now.getSeconds().toString().padStart(2, "0");
-    const formattedTime = `${hours}:${minutes}:${seconds}`;
+    //const seconds = now.getSeconds().toString().padStart(2, "0");
+    const formattedTime = `${hours}:${minutes}`;
+    //const formattedTime = `${hours}:${minutes}:${seconds}`;
 
     // Update all elements with the class "clock"
     clockElements.forEach(element => {

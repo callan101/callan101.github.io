@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<head>
+	<title>Time</title>
+	<meta charset="UTF-8">
+	<link rel="icon" href="../favicon.png" />
+	<meta name="description" content="Callan's blank reference">
+	<meta name="author" content="Callan Sheldon">
+	<link rel="stylesheet" href="../style.css">
+    <style>
+        
+        html, body {
+            height: 100%; 
+            margin: 0; 
+            overflow: hidden; 
+        }
+
+        
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 80%; 
+            text-align: center; 
+            box-sizing: border-box; 
+        }
+
+
+@media (min-aspect-ratio: 1/1) {
+        
+        #time {
+            font-size: 10vh; 
+            margin: 10px 0; 
+        }
+        #unix-time {
+            font-size: 4vh; 
+            margin: 10px 0; 
+        }
+
+        #day {
+            font-size: 6vh; 
+            margin: 10px 0; 
+        }
+
+        #day-of-year {
+            font-size: 4vh; 
+            margin: 10px 0; 
+        }
+
+        #date {
+            font-size: 8vh; 
+            margin: 10px 0; 
+        }
+}
+
+@media (max-aspect-ratio: 1/1) {
+
+        #time {
+            font-size: 10vw; 
+            margin: 10px 0; 
+        }
+        #unix-time {
+            font-size: 4vw; 
+            margin: 10px 0; 
+        }
+
+        #day {
+            font-size: 6vw; 
+            margin: 10px 0; 
+        }
+
+        #day-of-year {
+            font-size: 4vw; 
+            margin: 10px 0; 
+        }
+
+        #date {
+            font-size: 8vw; 
+            margin: 10px 0; 
+        }
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div id="unix-time" class="time"></div>
+        <div id="time" class="time"></div>
+        <div id="date" class="time"></div>
+        <div id="day" class="time"></div>
+        <div id="day-of-year" class="time"></div>
+
+        <script>
+            function updateTime() {
+                const now = new Date();
+                const unixTime = now.getTime();
+
+                let hours = now.getHours().toString().padStart(2, '0');
+                let minutes = now.getMinutes().toString().padStart(2, '0');
+                let seconds = now.getSeconds().toString().padStart(2, '0');
+                document.getElementById("time").textContent = `${hours}:${minutes}:${seconds}`;
+
+                let year = now.getFullYear();
+                let month = (now.getMonth() + 1).toString().padStart(2, '0'); // getMonth() is zero-indexed, so add 1
+                let day = now.getDate().toString().padStart(2, '0');
+                let formattedDate = `${year}-${month}-${day}`;
+                document.getElementById("date").textContent = formattedDate;
+
+                let dayOfWeek = now.toLocaleString('en-us', { weekday: 'long' });
+                document.getElementById("day").textContent = dayOfWeek;
+
+                function isLeapYear(year) {
+                    return (year % 4 === 0 && (year % 100 !== 0 || year % 400 === 0));
+                }
+
+                let startOfYear = new Date(now.getFullYear(), 0, 0);
+                let diff = now - startOfYear;
+                let oneDay = 1000 * 60 * 60 * 24;
+                let dayOfYear = Math.floor(diff / oneDay);
+
+                let daysInYear = isLeapYear(year) ? 366 : 365;
+                document.getElementById("day-of-year").textContent = `${dayOfYear}/${daysInYear}`;
+
+                document.getElementById("unix-time").textContent = Math.floor(unixTime / 1000);
+            }
+
+            updateTime();
+
+            setInterval(updateTime, 1000);
+        </script>
+    </div>
+</body>
+</html>
+
