@@ -12,6 +12,22 @@
     <subtitle>Callan's cool blog</subtitle>
     <rights>All rights reserved 2024, Callan.</rights>
     <entry>
+        <title type="html"><![CDATA[New Photos]]></title>
+        <id>https://callan101.com/rss/</id>
+        <link href="https://callan101.com/rss/time.html"/>
+        <updated>2025-03-18T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[New page, new photos]]></summary>
+        <content type="html"><![CDATA[<p>
+                                I added two more photo albums, both from a recent trip to northern Washington. Some from a plane tour and some of bald eagles I saw one morning. There's also a changelog page now.
+                </p>
+]]></content>
+        <author>
+            <name>Callan</name>
+            <email>hello [at] callan101.com</email>
+            <uri>https://callan101.com/</uri>
+        </author>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Time]]></title>
         <id>https://callan101.com/rss/</id>
         <link href="https://callan101.com/rss/time.html"/>

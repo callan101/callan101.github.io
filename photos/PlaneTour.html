@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Park Butte photos</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../favicon.png" />
+    <meta name="description" content="Callan's Park Butte photos">
+    <meta name="author" content="Callan Sheldon">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-sidemobile">
+            <div class="author">
+                <div class="nav">
+                    <div class="navwrap">
+                        <a href="../index.html">Index</a>
+                        <a href="../feed.xml">RSS</a>
+                        <a href="../now/">Now</a>
+                        <a href="../about/">About</a>
+                        <a href="../contact/">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="left-sidedesktop">
+            <div class="nav">
+                <a href="../index.html">Index</a>
+                <br>
+                <a href="../feed.xml">RSS</a>
+                <br>
+                <a href="../now/">Now</a>
+                <br>
+                <a href="../about/">About</a>
+                <br>
+                <a href="../contact/">Contact</a>
+            </div>
+            <div class="author">
+                <a href="../index.html">
+                    <div class="unix-time"></div>
+                    <div class="clock"></div>
+                    <div class="formatted-date"></div>
+                    <strong>Callan (101) Sheldon</strong>
+                </a>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="content">
+                <style>
+                    #images-wrapper {
+                        line-height: 0;
+                        -webkit-column-count: 4;
+                        -webkit-column-gap: 1vw;
+                        -moz-column-count: 4;
+                        -moz-column-gap: 1vw;
+                        column-count: 4;
+                        column-gap: 1vw;
+                        margin-right: auto;
+                        margin-left: auto;
+                    }
+                    
+                    #images-wrapper img {
+                        width: 100% !important;
+                        height: auto !important;
+                        border-radius: .7em;
+                        object-fit: contain;
+                        overflow: hidden;
+                        margin-bottom: 1vh;
+                        cursor: pointer;
+                    }
+                    
+                    #fullscreen-container {
+                        display: none;
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background: rgba(0, 0, 0, 0.8);
+                        justify-content: center;
+                        align-items: center;
+                        z-index: 69;
+                    }
+                    
+                    #fullscreen-image {
+                        max-width: 90%;
+                        max-height: 90%;
+                        object-fit: contain;
+                    }
+    
+                    @media (max-aspect-ratio: 1/1) {
+                        #images-wrapper {
+                        line-height: 0;
+                        -webkit-column-count: 2;
+                        -webkit-column-gap: 1vw;
+                        -moz-column-count: 2;
+                        -moz-column-gap: 1vw;
+                        column-count: 2;
+                        column-gap: 2vw;
+                        margin-right: auto;
+                        margin-left: auto;
+                    }
+                        }
+                </style>
+                <div id="images-wrapper">
+                    <img class="img-responsive" src="../imgs/camera/2025-03-25_PlaneTour/Bakerfromtheskies-01.jpg" onclick="openFullscreen(this)" />
+                    <img class="img-responsive" src="../imgs/camera/2025-03-25_PlaneTour/Bakerfromtheskies-02.jpg" onclick="openFullscreen(this)" />
+                    <img class="img-responsive" src="../imgs/camera/2025-03-25_PlaneTour/Bakerfromtheskies-03.jpg" onclick="openFullscreen(this)" />
+                    <img class="img-responsive" src="../imgs/camera/2025-03-25_PlaneTour/Bakerfromtheskies-03.jpg" onclick="openFullscreen(this)" />
+                    <img class="img-responsive" src="../imgs/camera/2025-03-25_PlaneTour/Bakerfromtheskies-04.jpg" onclick="openFullscreen(this)" />
+                    <img class="img-responsive" src="../imgs/camera/2025-03-25_PlaneTour/Bakerfromtheskies-05.jpg" onclick="openFullscreen(this)" />
+                    <img class="img-responsive" src="../imgs/camera/2025-03-25_PlaneTour/Bakerfromtheskies-06.jpg" onclick="openFullscreen(this)" />
+                    <img class="img-responsive" src="../imgs/camera/2025-03-25_PlaneTour/Bakerfromtheskies-07.jpg" onclick="openFullscreen(this)" />
+                    <img class="img-responsive" src="../imgs/camera/2025-03-25_PlaneTour/Bakerfromtheskies-08.jpg" onclick="openFullscreen(this)" />
+                    <img class="img-responsive" src="../imgs/camera/2025-03-25_PlaneTour/Bakerfromtheskies-09.jpg" onclick="openFullscreen(this)" />
+                    <img class="img-responsive" src="../imgs/camera/2025-03-25_PlaneTour/Bakerfromtheskies-10.jpg" onclick="openFullscreen(this)" />
+                    <img class="img-responsive" src="../imgs/camera/2025-03-25_PlaneTour/Bakerfromtheskies-11.jpg" onclick="openFullscreen(this)" />
+                    <img class="img-responsive" src="../imgs/camera/2025-03-25_PlaneTour/Bakerfromtheskies-12.jpg" onclick="openFullscreen(this)" />
+                    <img class="img-responsive" src="../imgs/camera/2025-03-25_PlaneTour/Bakerfromtheskies-13.jpg" onclick="openFullscreen(this)" />
+                    <img class="img-responsive" src="../imgs/camera/2025-03-25_PlaneTour/Bakerfromtheskies-14.jpg" onclick="openFullscreen(this)" />
+                    <img class="img-responsive" src="../imgs/camera/2025-03-25_PlaneTour/Bakerfromtheskies-15.jpg" onclick="openFullscreen(this)" />
+                    <img class="img-responsive" src="../imgs/camera/2025-03-25_PlaneTour/Bakerfromtheskies-16.jpg" onclick="openFullscreen(this)" />
+                    <img class="img-responsive" src="../imgs/camera/2025-03-25_PlaneTour/Bakerfromtheskies-17.jpg" onclick="openFullscreen(this)" />
+                    <img class="img-responsive" src="../imgs/camera/2025-03-25_PlaneTour/Bakerfromtheskies-18.jpg" onclick="openFullscreen(this)" />
+                    <img class="img-responsive" src="../imgs/camera/2025-03-25_PlaneTour/Bakerfromtheskies-19.jpg" onclick="openFullscreen(this)" />
+                    <img class="img-responsive" src="../imgs/camera/2025-03-25_PlaneTour/Bakerfromtheskies-20.jpg" onclick="openFullscreen(this)" />
+                    <img class="img-responsive" src="../imgs/camera/2025-03-25_PlaneTour/Bakerfromtheskies-21.jpg" onclick="openFullscreen(this)" />
+                    <img class="img-responsive" src="../imgs/camera/2025-03-25_PlaneTour/Bakerfromtheskies-22.jpg" onclick="openFullscreen(this)" />
+                    <img class="img-responsive" src="../imgs/camera/2025-03-25_PlaneTour/Bakerfromtheskies-23.jpg" onclick="openFullscreen(this)" />
+                    <img class="img-responsive" src="../imgs/camera/2025-03-25_PlaneTour/Bakerfromtheskies-24.jpg" onclick="openFullscreen(this)" />
+                    <img class="img-responsive" src="../imgs/camera/2025-03-25_PlaneTour/Bakerfromtheskies-25.jpg" onclick="openFullscreen(this)" />
+                    <img class="img-responsive" src="../imgs/camera/2025-03-25_PlaneTour/Bakerfromtheskies-26.jpg" onclick="openFullscreen(this)" />
+                    <img class="img-responsive" src="../imgs/camera/2025-03-25_PlaneTour/Bakerfromtheskies-27.jpg" onclick="openFullscreen(this)" />
+                    <img class="img-responsive" src="../imgs/camera/2025-03-25_PlaneTour/Bakerfromtheskies-28.jpg" onclick="openFullscreen(this)" />
+                    <img class="img-responsive" src="../imgs/camera/2025-03-25_PlaneTour/Bakerfromtheskies-29.jpg" onclick="openFullscreen(this)" />
+                    <img class="img-responsive" src="../imgs/camera/2025-03-25_PlaneTour/Bakerfromtheskies-30.jpg" onclick="openFullscreen(this)" />
+                </div>
+
+                <div id="fullscreen-container" onclick="closeFullscreen()">
+                    <img id="fullscreen-image" />
+                </div>
+
+                <script>
+                    function openFullscreen(imgElement) {
+                                const fullscreenContainer = document.getElementById('fullscreen-container');
+                                const fullscreenImage = document.getElementById('fullscreen-image');
+                                
+                                fullscreenImage.src = imgElement.src;
+                                
+                                fullscreenContainer.style.display = 'flex';
+                                document.body.style.overflow = 'hidden';
+                            }
+                    
+                            function closeFullscreen() {
+                                const fullscreenContainer = document.getElementById('fullscreen-container');
+                                fullscreenContainer.style.display = 'none';
+                                document.body.style.overflow = 'auto';
+                            }
+                </script>
+
+            </div>
+        </div>
+        <script src="../main.js"></script>
+    </div>
+</body>
+
+</html>
