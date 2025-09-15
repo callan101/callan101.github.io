@@ -10,6 +10,7 @@
     <style>
     .vidcontainer {
         width: 80%; /* or any other percentage value you desire */
+        margin-bottom: 30px; /* Add uniform spacing between videos */
     }
     
     .video-wrapper {
@@ -32,40 +33,8 @@
 
 <body>
     <div class="container">
-        <div class="left-sidemobile">
-            <div class="author">
-                <div class="nav">
-                    <div class="navwrap">
-                        <a href="../index.html">Index</a>
-                        <a href="../feed.xml">RSS</a>
-                        <a href="../now/">Now</a>
-                        <a href="../about/">About</a>
-                        <a href="../contact/">Contact</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="left-sidedesktop">
-            <div class="nav">
-                <a href="../index.html">Index</a>
-                <br>
-                <a href="../feed.xml">RSS</a>
-                <br>
-                <a href="../now/">Now</a>
-                <br>
-                <a href="../about/">About</a>
-                <br>
-                <a href="../contact/">Contact</a>
-            </div>
-            <div class="author">
-                <a href="../index.html">
-                    <div class="unix-time"></div>
-                    <div class="clock"></div>
-                    <div class="formatted-date"></div>
-                    <strong>Callan (101) Sheldon</strong>
-                </a>
-            </div>
-        </div>
+        
+        
         <div class="right-side">
             <div class="content">
                 <h1>Drone footage</h1>
@@ -76,6 +45,11 @@
                     <a href="../360-photos/">Here are my 360 photos I've taken with my drone.</a>
                 </p>
                 <br>
+                <div class="vidcontainer">
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/8l3qPLmDbdg" allowfullscreen></iframe>
+                    </div>
+                </div>
                 <div class="vidcontainer">
                     <div class="video-wrapper">
                         <iframe src="https://www.youtube.com/embed/7-0Foc3zjyA" allowfullscreen></iframe>

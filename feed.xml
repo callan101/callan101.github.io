@@ -1,97 +1,603 @@
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://callan101.com/feed.xml</id>
-    <title>Callan's cool blog</title>
-    <updated>2024-11-12T00:00:00.000Z</updated>
-    <generator>Callan's hands</generator>
-    <author>
-        <name>Callan</name>
-        <email>hello@callan101.com</email>
-        <uri>https://callan101.com</uri>
-    </author>
-    <link rel="alternate" href="https://callan101.com/"/>
-    <subtitle>Callan's cool blog</subtitle>
-    <rights>All rights reserved 2024, Callan.</rights>
-    <entry>
-        <title type="html"><![CDATA[New Photos]]></title>
-        <id>https://callan101.com/rss/2025-04-18_changelog_photos.html</id>
-        <link href="https://callan101.com/rss/2025-04-18_changelog_photos.html"/>
-        <updated>2025-03-18T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[New page, new photos]]></summary>
-        <content type="html"><![CDATA[<p>
+<?xml version="1.0" ?>
+<ns0:feed xmlns:ns0="http://www.w3.org/2005/Atom">
+    
+    
+    
+    
+    
+    
+    <ns0:id>https://callan101.com/feed.xml</ns0:id>
+    
+    
+    
+    
+    
+    
+    <ns0:title>Callan's cool blog</ns0:title>
+    
+    
+    
+    
+    
+    
+    <ns0:updated>2025-04-18T00:00:00.000Z</ns0:updated>
+    
+    
+    
+    
+    
+    
+    <ns0:generator>Callan's hands</ns0:generator>
+    
+    
+    
+    
+    
+    
+    <ns0:author>
+        
+        
+        
+        
+        
+        
+        <ns0:name>Callan</ns0:name>
+        
+        
+        
+        
+        
+        
+        <ns0:email>hello@callan101.com</ns0:email>
+        
+        
+        
+        
+        
+        
+        <ns0:uri>https://callan101.com</ns0:uri>
+        
+        
+        
+    
+    
+    
+    </ns0:author>
+    
+    
+    
+    
+    
+    
+    <ns0:link rel="alternate" href="https://callan101.com/"/>
+    
+    
+    
+    
+    
+    
+    <ns0:subtitle>Callan's cool blog</ns0:subtitle>
+    
+    
+    
+    
+    
+    
+    <ns0:rights>All rights reserved 2024, Callan.</ns0:rights>
+    
+    
+    
+    
+    
+    
+    <ns0:entry>
+        
+        
+        
+        
+        
+        
+        <ns0:title type="html">New Photos</ns0:title>
+        
+        
+        
+        
+        
+        
+        <ns0:id>https://callan101.com/rss/2025-04-18_changelog_photos.html</ns0:id>
+        
+        
+        
+        
+        
+        
+        <ns0:link href="https://callan101.com/rss/2025-04-18_changelog_photos.html"/>
+        
+        
+        
+        
+        
+        
+        <ns0:updated>2025-03-18T00:00:00.000Z</ns0:updated>
+        
+        
+        
+        
+        
+        
+        <ns0:summary type="html">New page, new photos</ns0:summary>
+        
+        
+        
+        
+        
+        
+        <ns0:content type="html">&lt;p&gt;
                                 I added two more photo albums, both from a recent trip to northern Washington. Some from a plane tour and some of bald eagles I saw one morning. There's also a changelog page now.
-                </p>
-]]></content>
-        <author>
-            <name>Callan</name>
-            <email>hello@callan101.com</email>
-            <uri>https://callan101.com/</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Time]]></title>
-        <id>https://callan101.com/rss/time</id>
-        <link href="https://callan101.com/rss/time.html"/>
-        <updated>2025-02-07T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Time page addition]]></summary>
-        <content type="html"><![CDATA[<p>
+                &lt;/p&gt;
+</ns0:content>
+        
+        
+        
+        
+        
+        
+        <ns0:author>
+            
+            
+            
+            
+            
+            
+            <ns0:name>Callan</ns0:name>
+            
+            
+            
+            
+            
+            
+            <ns0:email>hello@callan101.com</ns0:email>
+            
+            
+            
+            
+            
+            
+            <ns0:uri>https://callan101.com/</ns0:uri>
+            
+            
+            
+        
+        
+        
+        </ns0:author>
+        
+        
+        
+    
+    
+    
+    </ns0:entry>
+    
+    
+    
+    
+    
+    
+    <ns0:entry>
+        
+        
+        
+        
+        
+        
+        <ns0:title type="html">Time</ns0:title>
+        
+        
+        
+        
+        
+        
+        <ns0:id>https://callan101.com/rss/time</ns0:id>
+        
+        
+        
+        
+        
+        
+        <ns0:link href="https://callan101.com/rss/time.html"/>
+        
+        
+        
+        
+        
+        
+        <ns0:updated>2025-02-07T00:00:00.000Z</ns0:updated>
+        
+        
+        
+        
+        
+        
+        <ns0:summary type="html">Time page addition</ns0:summary>
+        
+        
+        
+        
+        
+        
+        <ns0:content type="html">&lt;p&gt;
                                 There is now a time page. This one is mostly for me so I can fullscreen it when I'm not actively using my computer. 
 
                                 It shows the current unix time, current time, date, day of the week, and how many days into the year it is.
-                </p>
-]]></content>
-        <author>
-            <name>Callan</name>
-            <email>hello@callan101.com</email>
-            <uri>https://callan101.com/</uri>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Initialization]]></title>
-        <id>https://callan101.com/rss/article1</id>
-        <link href="https://callan101.com/rss/article1.html"/>
-        <updated>2024-11-12T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Here's the summary!...]]></summary>
-        <content type="html"><![CDATA[<p>
-                    Good Morning. <br> This is the first article in my <a href="../feed.xml"> RSS feed</a>.<br>
-                    <br>
-                    <h2>
+                &lt;/p&gt;
+</ns0:content>
+        
+        
+        
+        
+        
+        
+        <ns0:author>
+            
+            
+            
+            
+            
+            
+            <ns0:name>Callan</ns0:name>
+            
+            
+            
+            
+            
+            
+            <ns0:email>hello@callan101.com</ns0:email>
+            
+            
+            
+            
+            
+            
+            <ns0:uri>https://callan101.com/</ns0:uri>
+            
+            
+            
+        
+        
+        
+        </ns0:author>
+        
+        
+        
+    
+    
+    
+    </ns0:entry>
+    
+    
+    
+    
+    
+    
+    <ns0:entry>
+        
+        
+        
+        
+        
+        
+        <ns0:title type="html">Initialization</ns0:title>
+        
+        
+        
+        
+        
+        
+        <ns0:id>https://callan101.com/rss/article1</ns0:id>
+        
+        
+        
+        
+        
+        
+        <ns0:link href="https://callan101.com/rss/article1.html"/>
+        
+        
+        
+        
+        
+        
+        <ns0:updated>2024-11-12T00:00:00.000Z</ns0:updated>
+        
+        
+        
+        
+        
+        
+        <ns0:summary type="html">Here's the summary!...</ns0:summary>
+        
+        
+        
+        
+        
+        
+        <ns0:content type="html">&lt;p&gt;
+                    Good Morning. &lt;br&gt; This is the first article in my &lt;a href="../feed.xml"&gt; RSS feed&lt;/a&gt;.&lt;br&gt;
+                    &lt;br&gt;
+                    &lt;h2&gt;
                         Updates include
-                    </h2>
-                    <ul>
-                        <li><a href="https://callan101.com/photos/">Photos page</a>
-                            <ul>
-                                <li>Heceta Lighthouse</li>
-                                <li>Sonoma Mountain</li>
-                                <li>Monogram Lake</li>
-                                <li>Park Butte</li>
-                            </ul>
-                        </li>
-                        <li><a href="https://callan101.com/360-photos/">More 360 photos</a>
-                            <ul>
-                                <li>Sumas Mountain</li>
-                                <li>Oyster Dome</li>
-                                <li>Deception Pass</li>
-                                <li>Kerry Park</li>
-                                <li>Ocho Totality <em>aka Arkansas eclipse</em></li>
-                                <li>Sonoma Mountain</li>
-                                <li>Downtown Petaluma</li>
-                                <li>Park Butte</li>
-                            </ul>
-                        </li>
-                        <li><a href="https://callan101.com/index.html">New navigation hierarchy</a></li>
-                        <a href="https://callan101.com/content i like/"></a>
-                        <li>New Content page</li>
+                    &lt;/h2&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;&lt;a href="https://callan101.com/photos/"&gt;Photos page&lt;/a&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;Heceta Lighthouse&lt;/li&gt;
+                                &lt;li&gt;Sonoma Mountain&lt;/li&gt;
+                                &lt;li&gt;Monogram Lake&lt;/li&gt;
+                                &lt;li&gt;Park Butte&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;&lt;a href="https://callan101.com/360-photos/"&gt;More 360 photos&lt;/a&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;Sumas Mountain&lt;/li&gt;
+                                &lt;li&gt;Oyster Dome&lt;/li&gt;
+                                &lt;li&gt;Deception Pass&lt;/li&gt;
+                                &lt;li&gt;Kerry Park&lt;/li&gt;
+                                &lt;li&gt;Ocho Totality &lt;em&gt;aka Arkansas eclipse&lt;/em&gt;&lt;/li&gt;
+                                &lt;li&gt;Sonoma Mountain&lt;/li&gt;
+                                &lt;li&gt;Downtown Petaluma&lt;/li&gt;
+                                &lt;li&gt;Park Butte&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;&lt;a href="https://callan101.com/index.html"&gt;New navigation hierarchy&lt;/a&gt;&lt;/li&gt;
+                        &lt;a href="https://callan101.com/content i like/"&gt;&lt;/a&gt;
+                        &lt;li&gt;New Content page&lt;/li&gt;
 
-                        <a href="https://callan101.com/360photoprep/"></a>
-                        <li>Updated 360 photo prep images and process</li>
+                        &lt;a href="https://callan101.com/360photoprep/"&gt;&lt;/a&gt;
+                        &lt;li&gt;Updated 360 photo prep images and process&lt;/li&gt;
 
-                    </ul>
-                </p>
-]]></content>
+                    &lt;/ul&gt;
+                &lt;/p&gt;
+</ns0:content>
+        
+        
+        
+        
+        
+        
+        <ns0:author>
+            
+            
+            
+            
+            
+            
+            <ns0:name>Callan</ns0:name>
+            
+            
+            
+            
+            
+            
+            <ns0:email>hello@callan101.com</ns0:email>
+            
+            
+            
+            
+            
+            
+            <ns0:uri>https://callan101.com/</ns0:uri>
+            
+            
+            
+        
+        
+        
+        </ns0:author>
+        
+        
+        
+    
+    
+    
+    </ns0:entry>
+    
+    
+    
+
+    
+    
+    <entry>
+        
+        
+        
+        
+        <title type="html">&lt;![CDATA[Sample RSS Post]]&gt;</title>
+        
+        
+        
+        
+        <id>https://callan101.com/rss/2025-08-29_sample_post.html</id>
+        
+        
+        
+        
+        <link href="https://callan101.com/rss/2025-08-29_sample_post.html"/>
+        
+        
+        
+        
+        <updated>2025-08-29T00:00:00.000Z</updated>
+        
+        
+        
+        
+        <summary type="html">&lt;![CDATA[This is a sample RSS post to demonstrate the new markdown-based system]]&gt;</summary>
+        
+        
+        
+        
+        <content type="html">&lt;![CDATA[&lt;h1&gt;Sample RSS Post&lt;/h1&gt;
+&lt;p&gt;This is a sample post written in Markdown. The Python script will convert this to HTML and update the RSS feed.&lt;/p&gt;
+&lt;h2&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Markdown support&lt;/strong&gt;: Write posts in Markdown&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;YAML frontmatter&lt;/strong&gt;: Metadata like title, date, and summary&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Automatic conversion&lt;/strong&gt;: Script converts to HTML automatically&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RSS integration&lt;/strong&gt;: Updates feed.xml automatically&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;How it works&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Write your post in Markdown in the &lt;code&gt;rss/source/&lt;/code&gt; folder&lt;/li&gt;
+&lt;li&gt;Run the Python script: &lt;code&gt;python3 rss/generate_post.py 2025-08-29_sample_post.md&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;The script will:&lt;/li&gt;
+&lt;li&gt;Convert Markdown to HTML&lt;/li&gt;
+&lt;li&gt;Create the HTML file in the &lt;code&gt;rss/&lt;/code&gt; folder&lt;/li&gt;
+&lt;li&gt;Update the RSS posts index&lt;/li&gt;
+&lt;li&gt;Update the RSS feed&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Code example&lt;/h2&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;# This is how the script works
+def convert_markdown_to_html(markdown_file):
+    # Convert markdown to HTML
+    # Add your site's styling
+    # Save to rss/ folder
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;That's it! Much easier than manually editing XML files.&lt;/p&gt;]]&gt;</content>
+        
+        
+        
+        
+        <author>
+            
+            
+            
+            
+            <name>Callan</name>
+            
+            
+            
+            
+            <email>hello@callan101.com</email>
+            
+            
+            
+            
+            <uri>https://callan101.com/</uri>
+            
+            
+        
+        
+        </author>
+        
+        
+    
+    
+    </entry>
+    
+    
+
+    
+    <entry>
+        
+        
+        <title type="html">&lt;![CDATA[Sample RSS Post]]&gt;</title>
+        
+        
+        <id>https://callan101.com/rss/2025-08-29_sample_post.html</id>
+        
+        
+        <link href="https://callan101.com/rss/2025-08-29_sample_post.html"/>
+        
+        
+        <updated>2025-08-29T00:00:00.000Z</updated>
+        
+        
+        <summary type="html">&lt;![CDATA[This is a sample RSS post to demonstrate the new markdown-based system]]&gt;</summary>
+        
+        
+        <content type="html">&lt;![CDATA[&lt;h1&gt;Sample RSS Post&lt;/h1&gt;
+&lt;p&gt;This is a sample post written in Markdown. The Python script will convert this to HTML and update the RSS feed.&lt;/p&gt;
+&lt;h2&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Markdown support&lt;/strong&gt;: Write posts in Markdown&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;YAML frontmatter&lt;/strong&gt;: Metadata like title, date, and summary&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Automatic conversion&lt;/strong&gt;: Script converts to HTML automatically&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RSS integration&lt;/strong&gt;: Updates feed.xml automatically&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;How it works&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Write your post in Markdown in the &lt;code&gt;rss/source/&lt;/code&gt; folder&lt;/li&gt;
+&lt;li&gt;Run the Python script: &lt;code&gt;python3 rss/generate_post.py 2025-08-29_sample_post.md&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;The script will:&lt;/li&gt;
+&lt;li&gt;Convert Markdown to HTML&lt;/li&gt;
+&lt;li&gt;Create the HTML file in the &lt;code&gt;rss/&lt;/code&gt; folder&lt;/li&gt;
+&lt;li&gt;Update the RSS posts index&lt;/li&gt;
+&lt;li&gt;Update the RSS feed&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Code example&lt;/h2&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;# This is how the script works
+def convert_markdown_to_html(markdown_file):
+    # Convert markdown to HTML
+    # Add your site's styling
+    # Save to rss/ folder
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;That's it! Much easier than manually editing XML files.&lt;/p&gt;]]&gt;</content>
+        
+        
+        <author>
+            
+            
+            <name>Callan</name>
+            
+            
+            <email>hello@callan101.com</email>
+            
+            
+            <uri>https://callan101.com/</uri>
+            
+        
+        </author>
+        
+    
+    </entry>
+    
+
+    <entry>
+        <title type="html">&lt;![CDATA[Simple Test Post]]&gt;</title>
+        <id>https://callan101.com/rss/2025-08-29_simple_test.html</id>
+        <link href="https://callan101.com/rss/2025-08-29_simple_test.html"/>
+        <updated>2025-08-29T00:00:00.000Z</updated>
+        <summary type="html">&lt;![CDATA[Simple Test Post]]&gt;</summary>
+        <content type="html">&lt;![CDATA[&lt;h1&gt;Simple Test Post&lt;/h1&gt;
+&lt;p&gt;This is a test post using the simplified RSS generator. No YAML frontmatter needed!&lt;/p&gt;
+&lt;h2&gt;How it works&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Title&lt;/strong&gt;: Comes from the first &lt;code&gt;#&lt;/code&gt; heading&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Date&lt;/strong&gt;: Comes from the filename (2025-08-29)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Content&lt;/strong&gt;: Just write markdown normally&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;No YAML required&lt;/li&gt;
+&lt;li&gt;Simple filename format: &lt;code&gt;YYYY-MM-DD_title.md&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Automatic title extraction&lt;/li&gt;
+&lt;li&gt;Automatic date extraction&lt;/li&gt;
+&lt;li&gt;Much simpler to use!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Code example&lt;/h2&gt;
+&lt;pre&gt;&lt;code class="language-python"&gt;# This is much simpler than the YAML version
+def simple_parse(markdown_file):
+    # Extract title from first # heading
+    # Extract date from filename
+    # Convert to HTML
+    # Done!
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;That's it! Much easier than the complex YAML version.&lt;/p&gt;]]&gt;</content>
         <author>
             <name>Callan</name>
             <email>hello@callan101.com</email>
             <uri>https://callan101.com/</uri>
         </author>
     </entry>
-</feed>
+</ns0:feed>

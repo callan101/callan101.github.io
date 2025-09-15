@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<head>
+    <title>Callan Sheldon - Home</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../favicon.png"/>
+    <meta name="description" content="Callan Sheldon's personal website - Photography, 360 photos, drone footage, and more">
+    <meta name="author" content="Callan Sheldon">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .grid-gallery {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1em;
+        }
+        
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+        }
+        
+        .grid-gallery:first-of-type .box img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            object-position: center;
+        }
+        
+        .box img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .panorama-gallery .box img {
+            width: 14rem !important;
+            height: 14rem !important;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        
+        span {
+            margin-top: 10px;
+            text-align: center;
+        }
+        
+        h1 {
+            margin-bottom: 10px;
+        }
+        
+        p {
+            margin-bottom: 20px;
+        }
+        
+        .content-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1em;
+            margin-top: 1em;
+        }
+        
+        .content-link {
+            padding: 0.5em;
+            border-radius: 4px;
+            transition: background-color 0.2s ease;
+        }
+        
+        .content-link:hover {
+            background: rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="right-side">
+            <div class="content">
+                <h1>Welcome to my website</h1>
+                <p>
+                    Hi, I'm Callan. I grew up in the north bay area of California and now live in Seattle. 
+                    I love the PNW/Cascadia region.
+                </p>
+                <p>
+                   Check out some of my creative work. My favorites are the 360 photos, normal photos and my QR code poster (sorry for the flash). This is my way of publishing some of the content I've created. Other things like <a href="../time/">time</a> are more for me.
+                </p>
+
+                <h2 style="text-align: center;">Photography</h2>
+                <div class="grid-gallery">
+                    <a href="../photos/Eagles.html">
+                        <div class="box">
+                            <img src="../imgs/camera/2025-03-26_Eagles/Birds-06.jpg" alt="Eagles in flight">
+                            <span>
+                                2025.03.26<br>
+                                Eagles near Blaine
+                            </span>
+                        </div>
+                    </a>
+                    <a href="../photos/ParkButtePhotos.html">
+                        <div class="box">
+                            <img src="../imgs/camera/2024-08-19_ParkButteLookout/DSC09317.jpg" alt="Park Butte Lookout">
+                            <span>
+                                2024.08.19<br>
+                                Park Butte Lookout
+                            </span>
+                        </div>
+                    </a>
+                </div>
+
+                <h2 style="text-align: center;">360° Panoramas</h2>
+                <div class="grid-gallery panorama-gallery">
+                    <a href="../360-photos/panorama.html?image=1">
+                        <div class="box">
+                            <img src="../imgs/360planets/2024-08-19_ParkButte_planet.png" alt="Park Butte 360°">
+                            <span>
+                                2024.08.19<br>
+                                Park Butte
+                            </span>
+                        </div>
+                    </a>
+                    <a href="../360-photos/panorama.html?image=4">
+                        <div class="box">
+                            <img src="../imgs/360planets/2024-04-08_OchoTotality_planet.png" alt="Solar Eclipse 360°">
+                            <span>
+                                2024.04.08<br>
+                                Solar Eclipse Totality
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <div style="margin: 2em 0; position: relative; width: 100%; padding-bottom: 56.25%;">
+                    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/811y_4L78QE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <script src="../main.js"></script>
+    </div>
+</body>
+</html>

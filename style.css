@@ -42,38 +42,48 @@ body::-webkit-scrollbar-thumb {
 /* Desktop Styles */
 @media (min-aspect-ratio: 1/1) {
     .container {
-        display: flex;
+        /* Removed flex display since navigation is now fixed */
    }
     .left-sidemobile {
         display: none;
    }
     .left-sidedesktop {
-        position: relative;
-        min-width: 15%;
-        flex: 2;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        max-width: 350px;
+        height: 100vh;
         border-right: 1px solid rgb(68, 68, 68);
         text-align: right;
-        min-height: 100vh;
         order: 1;
+        padding-right: 1vw;
+        overflow-y: auto;
+        z-index: 1000;
+        background-color: #040407;
    }
     .right-side {
-        flex: 8;
+        margin-left: 250px;
         order: 2;
         overflow-y: auto;
+        overflow-x: hidden;
+        width: calc(100% - 250px - 2vw);
+        padding-left: 2vw;
    }
     .author {
         text-align: left;
-        position: fixed;
+        position: absolute;
         bottom: 1vh;
-        left: 1vw;
+        left: 0;
+        width: 100%;
+        padding-left: 1vw;
    }
     .nav {
         text-align: right;
-        width: 19%;
-        min-width: 165px;
-        position: fixed;
-        padding-right: 1vw;
+        width: 100%;
+        position: relative;
         padding-top: 2vh;
+        padding-right: 1vw;
         line-height: 30px;
    }
 
@@ -90,6 +100,21 @@ body::-webkit-scrollbar-thumb {
         white-space:normal;
         margin: 5%;
    }
+    .webring {
+        text-align: left;
+        padding: 0;
+        margin-top: 1em;
+        font-size: 1em;
+        color: #f5f2ff;
+    }
+    .webring a {
+        color: #f5f2ff;
+        text-decoration: none;
+        margin: 0;
+    }
+    .webring a:hover {
+        color: rgb(172, 172, 255);
+    }
 
 }
 /* Mobile Styles */
@@ -105,24 +130,54 @@ body::-webkit-scrollbar-thumb {
     .left-sidemobile {
         order: 1;
         flex: 1;
+        border-bottom: 1px solid rgb(68, 68, 68);
+        padding: 1em 0;
    }
     .right-side {
         order: 2;
         flex: 1;
    }
     .author {
-        top: 0;
-        border-bottom: 1px solid rgb(68, 68, 68);
-        padding: 5%;
+        text-align: center;
+        padding: 0 5%;
+        margin-bottom: 0.5em;
    }
     .nav {
+        text-align: center;
+        margin-bottom: 0.5em;
+   }
+        .navwrap {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.3em;
+        justify-content: center;
         align-items: center;
+    }
+    .navwrap a {
+        padding: 0.4em 0.8em;
+        transition: color 0.2s ease;
+        font-size: 1.1em;
+        white-space: nowrap;
+    }
+    .navwrap a:hover {
+        color: rgb(172, 172, 255);
+    }
+    .webring {
         text-align: center;
-   }
-    .navwrap {
-        white-space: normal;
-        text-align: center;
-   }
+        padding: 0.5em 5%;
+        border-top: 1px solid rgb(68, 68, 68);
+        font-size: 1em;
+        color: #f5f2ff;
+    }
+    .webring a {
+        color: #f5f2ff;
+        text-decoration: none;
+        margin: 0 0.3em;
+    }
+    .webring a:hover {
+        color: rgb(172, 172, 255);
+    }
 
     body {
         width: 100%;
